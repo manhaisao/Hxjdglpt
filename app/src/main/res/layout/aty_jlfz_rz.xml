@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <include layout="@layout/upload_image_tool"></include>
+
+    <Button
+        android:id="@+id/jlfz_rz_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/other_button"
+        android:text="提交认证"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+</LinearLayout>

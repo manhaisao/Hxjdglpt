@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <!-- 网格显示图片 行列间距5dp 每列宽度90dp -->
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#EFDFDF"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:paddingLeft="3dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp">
+    </GridView>
+
+    <TextView
+        android:id="@+id/gridView1_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/image_tip"/>
+</LinearLayout>

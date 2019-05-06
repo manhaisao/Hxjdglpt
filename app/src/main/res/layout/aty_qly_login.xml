@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/qly_login_title"
+        layout="@layout/lay_detail_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/qly_login_title"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/qly_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_left_right"
+            android:layout_marginRight="@dimen/login_left_right"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/hint_username"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/login_input_size_1"/>
+
+
+        <EditText
+            android:id="@+id/qly_pwd_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_left_right"
+            android:layout_marginRight="@dimen/login_left_right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:textSize="@dimen/login_input_size_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_left_right"
+            android:layout_marginRight="@dimen/login_left_right"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/qly_autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_style"
+                android:padding="5dp"
+                android:text="自动登录"
+                android:textColor="@color/title_bg"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/qly_rember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/checkbox_style"
+                android:padding="5dp"
+                android:text="记住密码"
+                android:textColor="@color/title_bg"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/qly_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_left_right"
+            android:layout_marginRight="@dimen/login_left_right"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button"
+            android:text="@string/action_sign_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_button_size"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/dzz_dxz_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/group_list_gray"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dzz_t_lab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_dxz_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="组长："
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_lab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_dxz_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dzz_t_lab1"
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_t_lab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_t_lab1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="联系号码："
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_lab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dzz_t_lab2"
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_t_lab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_t_lab2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="党小组成员："
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_lab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab2"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dzz_t_lab3"
+        android:textColor="@color/c_text_color" />
+
+    <GridView
+        android:id="@+id/dzz_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="5"
+        android:paddingLeft="1dp"
+        android:stretchMode="columnWidth"></GridView>
+
+
+    <TextView
+        android:id="@+id/dzz_t_lab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_gridview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="所属网格："
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_lab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_gridview"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dzz_t_lab4"
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_t_lab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="网格员："
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_lab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab4"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dzz_t_lab5"
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_t_lab8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="联系号码："
+        android:textColor="@color/c_text_color" />
+
+    <TextView
+        android:id="@+id/dzz_lab8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dzz_lab5"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dzz_t_lab8"
+        android:textColor="@color/c_text_color" />
+
+</RelativeLayout>

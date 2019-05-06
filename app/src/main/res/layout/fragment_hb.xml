@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:gravity="center"
+             android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/hb_bg">
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb01"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb02"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb03"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb04"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb05"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb06"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb07"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb08"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/hb_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hb09"/>
+    </FrameLayout>
+</FrameLayout>

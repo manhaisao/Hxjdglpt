@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:gravity="center"
+             android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/cj_bj">
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj02"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj03"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj04"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj05"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj06"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj07"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/cj_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cj01"/>
+    </FrameLayout>
+</FrameLayout>

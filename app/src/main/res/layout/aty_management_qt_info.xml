@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <include
+        layout="@layout/info_detail_image_show"
+        android:visibility="gone"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/base_info_1"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/management_qt_t_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mc_"/>
+
+                <TextView
+                    android:id="@+id/management_qt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_name"/>
+
+                <TextView
+                    android:id="@+id/management_qt_t_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_t_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_cun_"/>
+
+                <TextView
+                    android:id="@+id/management_qt_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_cun"/>
+
+                <TextView
+                    android:id="@+id/management_qt_t_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_t_cun"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_grid_"/>
+
+                <TextView
+                    android:id="@+id/management_qt_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_cun"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_grid"/>
+
+                <TextView
+                    android:id="@+id/management_qt_t_gtlx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_t_grid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lx_"/>
+
+                <TextView
+                    android:id="@+id/management_qt_gtlx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_grid"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_gtlx"/>
+
+                <TextView
+                    android:id="@+id/management_qt_t_fr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_t_gtlx"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fr_"/>
+
+                <TextView
+                    android:id="@+id/management_qt_fr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_gtlx"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_fr"/>
+
+                <TextView
+                    android:id="@+id/management_qt_t_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_t_fr"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lx_phone_"/>
+
+                <TextView
+                    android:id="@+id/management_qt_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_fr"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_phone"/>
+
+                <TextView
+                    android:id="@+id/management_qt_t_zgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_t_phone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/zg_num"/>
+
+                <TextView
+                    android:id="@+id/management_qt_zgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/management_qt_phone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/management_qt_t_zgs"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/jyaddress_"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/management_qt_jyaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/yyzz_"
+                android:textSize="16sp"/>
+
+            <GridView
+                android:id="@+id/management_qt_yyzz"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:columnWidth="80dp"
+                android:gravity="center"
+                android:horizontalSpacing="3dp"
+                android:numColumns="5"
+                android:paddingLeft="3dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="3dp">
+            </GridView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/bz_"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/management_qt_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

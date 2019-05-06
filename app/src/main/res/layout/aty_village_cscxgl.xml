@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_area"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/area"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_area"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_hu"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/grid_hnum"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_hu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_hu"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/village_cscxgl_t_rk"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="人口总数："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/village_cscxgl_rk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/village_cscxgl_t_rk"
+                android:background="@drawable/edittext_round"
+                android:padding="5dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_xqzs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="小区总数："
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_xqzs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_xqzs"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_wgz"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/wgz_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_wgz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_wgz"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_wgzphone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/wgz_phone_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_wgzphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_wgzphone"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_jhgb"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="结合干部："
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_jhgb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_jhgb"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_jhgbphone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="联系电话："
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_jhgbphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_jhgbphone"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_zrr"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/zrr_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_zrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_zrr"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_zrrphone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/zrr_phone_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_zrrphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_zrrphone"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_sqgj"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="社区干警："
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_sqgj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_sqgj"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_sqgjphone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="联系号码："
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_sqgjphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_sqgjphone"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ba"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="保安："
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/cscxgl_add_ba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/edt_icon"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/cscxgl_add_ba"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ba"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_jdwgy"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="街道网格员："
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_jdwgy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_jdwgy"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_cjwgy"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="村居网格员："
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_cjwgy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_cjwgy"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ld"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="路灯："
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ld"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ljqyy"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ljqyy_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ljqyy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ljqyy"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ldbjy"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ldbjy_"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ldbjy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ldbjy"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ajy"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ghr_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ajy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ajy"
+                    android:background="@drawable/edittext_round"
+                    android:hint="@string/choose_ghy"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ajyphone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ghr_phone_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_ajyphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ajyphone"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ljc"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ljc_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/ge"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ljc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/village_cscxgl_ge"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ljc"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ljt"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ljt_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ge1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/ge"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ljt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/village_cscxgl_ge1"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ljt"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ljqycs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ljqycs_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ge2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ci"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/village_cscxgl_ljqycs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/village_cscxgl_ge2"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ljqycs"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ljrcl"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ljrcl_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ge3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/dun"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ljrcl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/village_cscxgl_ge3"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ljrcl"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_ljysd"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/ljssd_"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_ljysd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_ljysd"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_bjcl"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="保洁车辆："
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/village_cscxgl_bjcl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_bjcl"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_tqt"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/qtglsb_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_qt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_tqt"
+                    android:background="@drawable/edittext_round"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_content"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/qtnr_"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_content"
+                    android:background="@drawable/edittext_round"
+                    android:gravity="top"
+                    android:lines="5"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/village_cscxgl_t_bz"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/bz"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/village_cscxgl_bz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/village_cscxgl_t_bz"
+                    android:background="@drawable/edittext_round"
+                    android:gravity="top"
+                    android:lines="5"
+                    android:padding="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/upload_image_tool"
+                android:visibility="gone"></include>
+
+            <Button
+                android:id="@+id/village_cscxgl_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/other_button"
+                android:text="@string/comfirm_space_1"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

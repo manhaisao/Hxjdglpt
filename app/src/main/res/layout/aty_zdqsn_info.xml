@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/jsbhz_info_title"
+        layout="@layout/lay_detail_title"></include>
+
+    <Button
+        android:id="@+id/jsbhz_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_button"
+        android:text="管控记录"
+        android:textColor="@color/white"
+        android:textSize="16sp"></Button>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/jsbhz_info_btn"
+        android:layout_below="@id/jsbhz_info_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/base_info_1"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/name_"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_name"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_cun_"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_cun"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_cun"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_grid_"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_cun"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_grid"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_grid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sfzh_"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_grid"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_birth"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_birth"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lx_phone_"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_birth"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_type"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_jhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_type"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="监护人："/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_jhr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_type"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_jhr"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_jhrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_jhr"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="监护人电话："/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_jhrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_jhr"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_jhrdh"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_gx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_jhrdh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="监护人与当事人关系："/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_gx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_jhrdh"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_gx"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_gx"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/jt_address"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_gx"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_address"/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_xz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_address"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="管控小组："/>
+
+                <TextView
+                    android:id="@+id/jsbhz_d_xz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_address"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_xz"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xzz.hxjdglpt.activity"
+    android:versionCode="60"
+    android:versionName="6.9">
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Required -->
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon, android:theme">
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuidePageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.xzz.hxjdglpt.superfileview.FileDisplayActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YanhuaActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YanhuaInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PlotLtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtVillageDjDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PlotSQUserActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtRdzjActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+        android:name=".GzdtRdzjDetailActivity"
+        android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".WgqyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtRdzjFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtVillageDjFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtVillageDjActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LtyqUserListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DzzlbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Dzz_DzbDxzListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Dzz_DxzListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XqgsqActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".DwDetailInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TezhongweixianActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TezhongweixianInfo"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".XqgsqInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BjxxActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".HdqgActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BjxxInfoActicity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HdqgInfoActicity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ChengpinActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ChengpinInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtVillageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtVillageDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtVillageFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XinfangActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--劳动保障-->
+        <activity
+            android:name=".LsIndexActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsWorkstationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsSocialSecurityActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsLandlessSafeguardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsLaborSupervisionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsResidentsInsuranceActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsResidentsMedicalActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".JyhAddActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".JyhListActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".JyhInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsWorkstationSecondary"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsInsuranceVillageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsInsuranceVillageSecondaryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsMedicalVillageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsMedicalVillageSecondaryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsVillageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsVillageSecondaryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsGridMapActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".XfjdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CxglActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsCollect01Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect02Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect03Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect04Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect05Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect06Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect07Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect08Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect09Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect02JbrActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect03JbrActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".LsCollect04JbrActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".RoupidouzhiActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RoupidouzhiInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NewsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JzgdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YjdwInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".KpqkInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".KpqkActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JjkfqActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NsqkInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SpdkdInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NsqkActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DkdListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SpdkdActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".YzyhActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YzyhDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".JpzsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JpzsDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WmcjDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JzgdInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WmcjFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BaryListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".QylbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BaryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BaryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DzzListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DzzInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YjdwActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HospitalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JlyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HospitalInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CjjjActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JlyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GgDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YxdyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YxdyDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HrbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DjZzjgActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HrbDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HlryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GgActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HlryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JzgyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ShjyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JzgyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ShjyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JlyMoreListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjQlywActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjDbzdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VlcVideoActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".XfaqActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XfaqDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZszhjsbhzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZszhjsbhzGzrzDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GkxzListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SignListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GkxzFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XfaqFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZszhjsbhzGzrzFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqjdryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XjryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZdqsnInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqjdryGzrzFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqjdryGzrzDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqfxryGzrzDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqfxryGzrzFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqjdryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqfxryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AzbjryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XjryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SqfxryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AzbjryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZdqsnActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GkxzInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZszhjsbhzInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PlotGzdtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzzdtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridGzdtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridGzdtFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridGzdtDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZdryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZdryGzrzDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FlfwGzdtActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FlfwGzdtDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".FlfwFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FlfwConsultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PfwspDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZdryGzrzFbActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".FljktActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FlfwJktFbActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FlfwjktDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FljktTwoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FljktTypefbActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FlfwActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize|stateHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PfwspAcitivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".PfwspfbActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ZdryGzrzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZdryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JszcActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZzjgActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjDbmlDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjDbfcDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjDbfcActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SignActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BrowserWapActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".QlyLoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".QlyListActicity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjDbmlActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZhfwListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjDtDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RdzjBmzzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NoticeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NoticeDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ManagementQtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ManagementQtInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageJhsyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageXfwdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageAqscActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TsdjhdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageCscxglActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageFwzfActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZfzzInfoVillageInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZfzzInfoVillageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageSfxzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageQygzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageXshsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageMzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageDjActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NewsDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DataCollectionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PartyBuildingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PartyDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PicturePreviewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BaseInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CompanyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ManagementActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PartyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PeoperActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PlotActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FwmdmActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FwmdmConsultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MqztcActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MqztcQuestionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ScheduleActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AlreadythingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WorkSendActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WorkBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JyfwActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JyfwFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JyfwDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SxgzListActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".QfhxActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".WmcjActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".CpbzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CpbzDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".DwDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".QfhxListActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".QfhxDtDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".GzzdtDtDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageSxgzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsrtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YfdxActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LsrtInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YfdxInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZljInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TkgyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TkgyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZfzzInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YlfnInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DsznInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DsznInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JlfzInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JlfzRZActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JlfzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JsknActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LdrkInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JsknInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LdrkActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZfzzInfoInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CityInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CityInfoInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ZljActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridSxgzDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CjryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DbryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XxcjVillageListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AccountSafeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ModifyMyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AqscActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DjActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FwzfActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XshsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".QygzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".JhsyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SfxzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CscxglActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".XfwdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageMapActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".VillageIntroductionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridIntroductionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ModifyMyPasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MyAnswerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MqztcDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name=".MyConsultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FwmdmDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AboutOurInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TaskDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ScheduleBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WorkSendListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TaskDetailNewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".WorkBackListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WorklogDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".IpAddressActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridFunctionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GridSxgzActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzzdtFbActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GzdtDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PartyMemberInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DbryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CjryInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".YlfnInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CompanyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ManagementInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PlotInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HxfcActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MapdetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ShowImageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ScheduleZfActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FwmdmWebViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="fm.jiecao.jcvideoplayer_lib.FullScreenActivity">
+        </activity>
+        <activity
+            android:name=".DBTaskDetailActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!--百度地图   sLr7LuTzVPYMKZdIcnCUEAiy6KtGgK4Y   jP6eslYkgwYYp1fGxnPF5X1Rej3iaqNU-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="sLr7LuTzVPYMKZdIcnCUEAiy6KtGgK4Y" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"></action>
+            </intent-filter>
+        </service>
+
+
+        <!-- 即时聊天工具配置 -->
+        <activity
+            android:name=".ui.activity.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.xzz.hxjdglpt"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--聚合会话列表-->
+        <activity
+            android:name=".ui.activity.SubConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.xzz.hxjdglpt"
+                    android:path="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--选择联系人 多人聊天-->
+        <activity
+            android:name=".ui.activity.SelectFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.xzz.hxjdglpt"
+                    android:path="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainMIActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.xzz.hxjdglpt"
+                    android:pathPrefix="/push_message"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.NewFriendListActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <!--搜索好友-->
+        <activity
+            android:name=".ui.activity.SearchFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GroupListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CreateGroupActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xzz.hxjdglpt.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <!--
+                <provider
+                    android:name="android.support.v4.content.FileProvider"
+                    android:authorities="${applicationId}.provider"
+                    android:exported="false"
+                    android:grantUriPermissions="true">
+                    <meta-data
+                        android:name="android.support.FILE_PROVIDER_PATHS"
+                        android:resource="@xml/file_paths"/>
+                </provider>
+                -->
+    </application>
+
+</manifest>

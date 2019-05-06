@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.xzz.hxjdglpt.customview.CircleNetImageView
+        android:id="@+id/plot_lt_img"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/plot_lt_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/plot_lt_img"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/plot_lt_img"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/plot_lt_item_sj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plot_lt_item_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/plot_lt_img"
+        android:textColor="@color/border_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/plot_lt_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plot_lt_item_sj"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/plot_lt_img"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/dbml_item_phone"
+        android:background="@mipmap/division" />
+
+</RelativeLayout>

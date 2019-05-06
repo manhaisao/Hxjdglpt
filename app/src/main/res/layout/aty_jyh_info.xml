@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/jsbhz_info_title"
+        layout="@layout/lay_detail_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/jsbhz_info_btn"
+        android:layout_below="@id/jsbhz_info_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/base_info_1"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="商铺名称：" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_name" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_ownername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="经营户姓名：" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_ownername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_ownername" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_ownername"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="联系电话：" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_ownername"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_phone" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_phone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="经营面积：" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_phone"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_area" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_t_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_t_area"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="备注：" />
+
+                <TextView
+                    android:id="@+id/jsbhz_d_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jsbhz_d_area"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jsbhz_d_t_comment" />
+
+
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_below="@+id/jsbhz_d_t_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@mipmap/division"/>
+
+                <LinearLayout
+                    android:layout_below="@id/line"
+                    android:id="@+id/gzdt_detail_fjl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/work_fj"/>
+
+                    <LinearLayout
+                        android:id="@+id/gzdt_detail_fj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textColor="@color/title_bg"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path
+            name="camera_photos"
+            path="."/>
+        <external-path
+            name="files_root"
+            path="Android/data/com.xzz.hxjdglpt"/>
+        <external-path
+            name="external_storage_root"
+            path="."/>
+    </paths>
+    <paths>
+        <!--升级-->
+        <external-cache-path
+            name="mn_update_external_cache"
+            path=""/>
+        <cache-path
+            name="mn_update_cache"
+            path=""/>
+    </paths>
+</resources>

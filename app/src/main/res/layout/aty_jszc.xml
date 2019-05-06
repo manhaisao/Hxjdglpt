@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color"
+                android:fitsSystemWindows="true"
+                tools:ignore="MergeRootFrame">
+
+    <include
+        android:id="@+id/about_us_title"
+        layout="@layout/lay_detail_title"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/about_us_title"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/gs_logo"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:text="公司名称："
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+
+            <TextView
+                android:id="@+id/setting_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="小蜘蛛网络盐城有限公司"
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:text="官方网站："
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+
+            <TextView
+                android:id="@+id/about_our_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:autoLink="web"
+                android:text="www.xzzsoft.com"
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:text="联系邮箱："
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="15995159808@139.com"
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:text="联系电话："
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="0515-83062929"
+                android:textColor="@color/shallow_balck"
+                android:textSize="@dimen/my_info_text_size_md"/>
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1px"
+            android:background="@color/white"></FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/show_qcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/btm"
+        android:src="@mipmap/qcode_download"
+        android:visibility="gone"/>
+</RelativeLayout>

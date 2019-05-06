@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_contact_first_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_bar"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/shallow_balck"
+        android:textSize="@dimen/my_info_text_size"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bar">
+
+
+        <TextView
+            android:id="@+id/dialog_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/shallow_balck"
+            android:textSize="@dimen/my_info_text_size"/>
+
+        <CheckBox
+            android:id="@+id/dialog_item_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="false"
+            android:gravity="right"/>
+    </RelativeLayout>
+
+</LinearLayout>

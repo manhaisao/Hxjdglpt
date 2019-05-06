@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bg">
+
+        <ImageView
+            android:id="@+id/iv_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"></ImageView>
+
+        <TextView
+            android:id="@+id/hx_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/title_bottom"
+            android:layout_marginTop="@dimen/title_top"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/hx_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_bottom"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/flfw_search"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/search_color"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fwmdm_size_1" />
+
+        <EditText
+            android:id="@+id/flfw_search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/fwmdm_search"
+            android:background="@color/white"
+            android:hint="@string/enter_key"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/fwmdm_size_1" />
+    </RelativeLayout>
+
+    <com.xzz.hxjdglpt.customview.autolistview.AutoListView
+        android:id="@+id/list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':Transferee', ':UniversalLoader', ':IMLib', ':IMKit', ':libvlc2.5.5', ':jcvideoplayer-lib'

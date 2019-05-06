@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/task_title_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/item_arrow"/>
+
+    <TextView
+        android:id="@+id/task_title_tatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/task_title_arrow"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/task_title_tatus"
+        android:textSize="@dimen/fwmdm_size_1"/>
+
+    <LinearLayout
+        android:id="@+id/task_item_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@id/task_title_tatus"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/task_item_ren_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/work_send_ren_"
+            android:textColor="@color/shallow_deepgray"
+            android:textSize="@dimen/fwmdm_size_2"/>
+
+        <TextView
+            android:id="@+id/task_ren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/shallow_deepgray"
+            android:textSize="@dimen/fwmdm_size_2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/task_item_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_item_lay"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@id/task_title_tatus"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/task_item_ren1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/work_send_ren"
+            android:textColor="@color/shallow_deepgray"
+            android:textSize="@dimen/fwmdm_size_2"/>
+
+        <TextView
+            android:id="@+id/task_ren1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/shallow_deepgray"
+            android:textSize="@dimen/fwmdm_size_2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/task_item_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_item_lay1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/work_send_time"
+        android:textColor="@color/shallow_deepgray"
+        android:textSize="@dimen/fwmdm_size_2"/>
+
+    <TextView
+        android:id="@+id/task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_item_lay1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@id/task_title_tatus"
+        android:layout_toRightOf="@id/task_item_time_tv"
+        android:singleLine="true"
+        android:textColor="@color/shallow_deepgray"
+        android:textSize="@dimen/fwmdm_size_2"/>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/division"/>
+</RelativeLayout>

@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">幸福河下</string>
+    <!-- NetUtil -->
+    <string name="link_net">无网络连接</string>
+    <string name="prompt">提示</string>
+    <string name="confirm">确定</string>
+    <string name="check_net_setting">请检查网络设置</string>
+
+    <!-- XListView -->
+    <string name="ret_update">最近更新:</string>
+
+    <!-- XListViewFooter -->
+    <string name="down_load_more">松开载入更多</string>
+    <string name="up_load_more">上拉加载更多</string>
+
+    <!-- XListViewHeader -->
+    <string name="down_refresh">下拉刷新</string>
+    <string name="up_refresh">松开刷新数据</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="loading_finsh">加载完成</string>
+    <!-- VolleyRequest -->
+    <string name="net_unuser">网络连接不可用，请稍后重试</string>
+
+    <!-- VolleyErrorHelper -->
+    <string name="net_timeout">连接服务器超时</string>
+    <string name="net_unstability">当前网络不稳定，请重新再试</string>
+    <string name="net_fail">连接服务器失败</string>
+
+    <!-- BaseActivity -->
+    <string name="tip_title">提示信息</string>
+    <string name="tip_permission_content">当前应用缺少必要权限，该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。</string>
+    <string name="cancel">取消</string>
+    <string name="comfirm">确认</string>
+    <string name="comfirm_1">确定</string>
+    <string name="finish">完成</string>
+    <string name="comfirm_finish">确认完成</string>
+    <string name="ht_space">回&#160;&#160;&#160;&#160;退</string>
+    <string name="comfirm_fail">确认失败</string>
+    <string name="comfirm_space_1">确&#160;&#160;&#160;&#160;定</string>
+    <string name="update_space_1">修&#160;&#160;&#160;&#160;改</string>
+    <string name="ht_fail">回退失败</string>
+    <string name="ht_success">回退成功</string>
+
+    <string name="load_more_data">加载更多...</string>
+    <string name="no_more_data">没有更多信息了...</string>
+
+    <!-- tab -->
+    <string name="index">首页</string>
+
+    <!-- IndexFragment -->
+    <string name="cname">幸福河下综合服务网格化管理平台</string>
+    <string name="information">最新通知：</string>
+
+    <!-- MyInfoFragment -->
+    <string name="my_info">我的</string>
+    <string name="title_activity_login">登录</string>
+    <string name="gryw">个人业务</string>
+    <string name="sqfw">便民服务</string>
+    <string name="sxgzxxcj">综合服务</string>
+
+    <string name="dbsx">待办事项</string>
+    <string name="ybsx">已办事项</string>
+    <string name="rwfp">任务分派</string>
+    <string name="gzfk">工作反馈</string>
+    <string name="zxtz">最新通知</string>
+    <string name="sqxw">河下动态</string>
+    <string name="ckdt">网格地图</string>
+    <string name="xxcj">信息采集</string>
+    <string name="qtgz">其他工作</string>
+    <string name="rdzj">人大之家</string>
+    <string name="tjfx">河下风采</string>
+    <string name="djxx">党建学习</string>
+    <string name="fwmdm">服务面对面</string>
+    <string name="mqztc">民情直通车</string>
+    <string name="cjlb">村居列表</string>
+
+    <string name="aqsc">应急服务</string>
+    <string name="dj">党建</string>
+    <string name="jly">社会养老</string>
+    <string name="fwzw">综合执法</string>
+    <string name="xshs">协税护税</string>
+    <string name="qygz">企业服务</string>
+    <string name="mz">民政</string>
+    <string name="jhsy">卫生健康</string>
+    <string name="sfxz">政法综治</string>
+    <string name="cscxgl">长效管理</string>
+    <string name="xfwd">和谐社区</string>
+    <string name="xqgsq">小区归社区</string>
+
+    <string name="zsjsb">肇事肇祸精神病患者：</string>
+    <string name="zdqsn">重点青少年：</string>
+    <string name="sqjd">社区戒毒人员：</string>
+    <string name="xjry">邪教人员：</string>
+    <string name="mdjfdjy">矛盾纠纷调解员：</string>
+    <string name="mdjfxxy">矛盾纠纷信息员：</string>
+    <string name="fzxcy">法制宣传员：</string>
+    <string name="pfzyz">普法志愿者：</string>
+    <string name="azbjry">安置帮教人员：</string>
+    <string name="flgw">法律顾问：</string>
+
+    <string name="mdjfdjy_g">矛盾纠纷调解员（网格）：</string>
+    <string name="mdjfxxy_g">矛盾纠纷信息员（网格）：</string>
+    <string name="fzxcy_g">法制宣传员（网格）：</string>
+    <string name="pfzyz_g">普法志愿者（网格）：</string>
+    <string name="flgw_g">法律顾问（网格）：</string>
+
+
+    <string name="zrr_">责任人：</string>
+    <string name="fwddzrr_">防违大队责任人：</string>
+    <string name="zrr_phone_">责任人号码：</string>
+    <string name="fwddzrr_phone">防违大队责任人号码：</string>
+    <string name="ajy_">安监员：</string>
+    <string name="ajy_phone_">安监员号码：</string>
+    <string name="jyyhbzs">经营烟花爆竹商：</string>
+    <string name="jyyhbzs_">经营烟花爆竹商</string>
+    <string name="rpzf_">肉皮作坊：</string>
+    <string name="rpzf">肉皮作坊</string>
+    <string name="dzpjgf_">豆制品加工：</string>
+    <string name="dzpjgf">豆制品加工</string>
+    <string name="jzgd_">建筑工地：</string>
+    <string name="tzsb_">特种设备：</string>
+    <string name="wxhxp_">危险化学品：</string>
+    <string name="cpy_">成品油：</string>
+    <string name="ge">个</string>
+    <string name="hu">户</string>
+
+    <string name="ltqy_">列统企业：</string>
+    <string name="myqy_">民营企业：</string>
+    <string name="jtqy_">集体企业：</string>
+
+    <string name="dxzz_">党小组长：</string>
+    <string name="dxzzs_">党小组数：</string>
+    <string name="xqsl_">小区数量：</string>
+    <string name="dys_">党员数：</string>
+    <string name="tsdjhd_">特色党建活动：</string>
+    <string name="tsdjhd">特色党建活动</string>
+    <string name="kndys_">困难党员数：</string>
+    <string name="dxzz_phone_">党小组长号码：</string>
+    <string name="wjh_">违建户：</string>
+    <string name="dj_phone_">监督电话：</string>
+
+    <string name="hsy_">护税员：</string>
+    <string name="hsy_phone_">护税员电话：</string>
+    <string name="jhld_">结合领导：</string>
+    <string name="jhld_phone_">结合领导电话：</string>
+    <string name="jd_mz_phone_">监督电话（民政办）：</string>
+    <string name="jd_cw_phone_">监督电话（村委会）：</string>
+    <string name="wei">位</string>
+    <string name="cjr_">残疾人：</string>
+    <string name="cjr_1_">持证残疾人：</string>
+    <string name="cjr_2_">重残生活补贴：</string>
+    <string name="cjr_3_">其他类生活补贴：</string>
+    <string name="cjr_4_">一级护理补贴：</string>
+    <string name="cjr_5_">二级护理补贴：</string>
+    <string name="lsrt_">留守儿童：</string>
+    <string name="yfdx_">优抚对象：</string>
+    <string name="ldlx_">流动类型：</string>
+    <string name="yflx_">优抚类型：</string>
+    <string name="ylfns_">育龄妇女数：</string>
+    <string name="dsznhs_">独生子女户数：</string>
+    <string name="jlfzhs_">奖励扶助户数：</string>
+    <string name="jlfz_shengf">省扶：</string>
+    <string name="jlfz_shif">市扶：</string>
+    <string name="jlfz_sd">失独：</string>
+    <string name="jlfz_sc">伤残：</string>
+    <string name="ldrks_">流动人口数：</string>
+    <string name="sdjths_">失独家庭户数：</string>
+    <string name="jsknhs_">计生困难户数：</string>
+    <string name="ykby_">特困(五保)供养：</string>
+    <string name="ykby_1">集中供养人员：</string>
+    <string name="ykby_2">分散供养人员：</string>
+    <string name="ykby_3">城市三无人员：</string>
+    <string name="ykby_4">孤儿及困境儿童：</string>
+    <string name="zlj_">80岁以上尊老金：</string>
+    <string name="zlj_1">80-89周岁人员：</string>
+    <string name="zlj_2">90-99周岁人员：</string>
+    <string name="zlj_3">100周岁以上：</string>
+
+    <string name="hyzk">婚姻状况：</string>
+    <string name="sex">性别：</string>
+    <string name="rzzt">认证状态：</string>
+    <array name="sex_list">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+    <array name="ldlx_list">
+        <item>省内流入</item>
+        <item>省内流出</item>
+        <item>省外流入</item>
+        <item>省外流出</item>
+    </array>
+
+    <array name="cljl_list">
+        <item>现场责令改正</item>
+        <item>下达整改通知书</item>
+        <item>其他</item>
+    </array>
+    <array name="jclb_list">
+        <item>日常检查</item>
+        <item>专项检查</item>
+    </array>
+
+    <string name="wgy_">网格员：</string>
+    <string name="wgz_">网格长：</string>
+    <string name="wgy_phone_">网格员号码：</string>
+    <string name="wgz_phone_">网格长号码：</string>
+    <string name="sqfxry_">社区服刑人员：</string>
+    <string name="sqjzry_">社区矫正人员：</string>
+    <string name="xsjjry_">刑释解教人员：</string>
+    <string name="qsnwffz_">青少年违法犯罪：</string>
+
+    <string name="ghr_">管护人：</string>
+    <string name="ghr_phone_">管护人电话：</string>
+    <string name="ljc_">垃圾池：</string>
+    <string name="ljt_">垃圾桶：</string>
+    <string name="ljqycs_">垃圾清运次数：</string>
+    <string name="ljrcl_">垃圾日产量：</string>
+    <string name="ljssd_">垃圾输送点：</string>
+    <string name="qtglsb_">其他管理设备：</string>
+    <string name="qtnr_">其他关于网格内容信息：</string>
+    <string name="ci">次</string>
+    <string name="dun">吨</string>
+
+    <string name="bar_">包案人：</string>
+    <string name="bar_phone_">包案人号码：</string>
+    <string name="zdrq_">信访诉求人员：</string>
+
+    <!-- login -->
+    <string name="prompt_email">账号</string>
+    <string name="prompt_password">密码</string>
+    <string name="hint_email">请输入账号</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="action_sign_in">登&#160;&#160;&#160;&#160;录</string>
+    <string name="error_invalid_password">密码不符合要求！</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_email_required">账号不为空！</string>
+    <string name="error_username_required">用户名不为空！</string>
+    <string name="error_password_required">密码不为空！</string>
+    <string name="error_username_at">账号格式不对！</string>
+    <string name="login_fail">登录失败！</string>
+    <string name="account_pwd_inc">账号或密码错误！</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="register_account">注册账号</string>
+    <string name="forget">忘记密码</string>
+    <string name="phone">手机号</string>
+    <string name="phone_">手机号：</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码</string>
+    <string name="v_code">验证码</string>
+
+    <!-- register -->
+    <string name="register">注&#160;&#160;&#160;&#160;册</string>
+    <string name="reg_input_phone">请输入手机号</string>
+    <string name="reg_input_account">请输入用户名</string>
+    <string name="reg_input_realname">请输入姓名</string>
+    <string name="reg_input_pwd">请输入密码</string>
+    <string name="reg_com_pwd">再次确认密码</string>
+    <string name="reg_input_code">请输入验证码</string>
+    <string name="ach_code">获取验证码</string>
+    <string name="account_empty">账号为空</string>
+    <string name="name_empty">姓名为空</string>
+    <string name="phone_empty">手机号为空</string>
+    <string name="pwd_empty">密码为空</string>
+    <string name="pwd_nq">密码不一致</string>
+    <string name="reg_success">注册成功</string>
+    <string name="user_exist">账号已存在</string>
+    <string name="reg_fail">注册失败</string>
+
+    <!-- 轮播宽高 -->
+    <integer-array name="ad_default_size">
+        <item>720</item>
+        <item>295</item>
+    </integer-array>
+
+
+    <string name="choose_file">请选择文件</string>
+    <string name="uploading">上传中...</string>
+    <array name="isfinish">
+        <item>已完成</item>
+        <item>未完成</item>
+    </array>
+    <array name="is">
+        <item>是</item>
+        <item>否</item>
+    </array>
+    <!--<array name="qyarea_list">-->
+    <!--<item>交通运输</item>-->
+    <!--<item>生活服务</item>-->
+    <!--<item>建筑服务</item>-->
+    <!--<item>现代服务</item>-->
+    <!--<item>销售无形资产</item>-->
+    <!--<item>其他制造业</item>-->
+    <!--<item>娱乐服务</item>-->
+    <!--<item>装卸搬运服务</item>-->
+    <!--</array>-->
+    <array name="qyarea_list">
+        <item>工业</item>
+        <item>商业</item>
+        <item>交通运输业</item>
+        <item>餐饮娱乐业</item>
+        <item>建筑业</item>
+        <item>其它</item>
+    </array>
+    <array name="qytype_list">
+        <item>工业</item>
+        <item>农业</item>
+        <item>服务业</item>
+        <item>其他</item>
+    </array>
+    <array name="djgzdt_type">
+        <item>三会一课</item>
+        <item>远程教育</item>
+        <item>共驻共建</item>
+        <item>其他工作</item>
+    </array>
+    <array name="chengpinyou">
+        <item>柴油</item>
+        <item>汽油</item>
+        <item>其他</item>
+    </array>
+    <array name="yanhuadj">
+        <item>A级</item>
+        <item>B级</item>
+        <item>C级</item>
+        <item>D级</item>
+    </array>
+    <array name="roupidouzhi">
+        <item>肉皮作坊</item>
+        <item>豆制品加工</item>
+    </array>
+    <array name="tezhongweixian">
+        <item>特种设备</item>
+        <item>危险化学品</item>
+    </array>
+    <string name="work_content">工作内容：</string>
+
+    <!-- MyInfoFragment -->
+    <string name="update_remind">升级提醒</string>
+    <string name="is_update">发现新的版本，是否更新？</string>
+    <string name="setting_not_update">暂不更新</string>
+    <string name="setting_update">马上更新</string>
+    <string name="downloading">亲，努力下载中...</string>
+    <string name="download_success">下载成功</string>
+    <string name="version_download_fail">下载失败，请检查网络和SD卡</string>
+    <string name="exit">退出登录</string>
+    <string name="account_safe">账号与安全</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="my_question">我的反映</string>
+    <string name="my_consult">我的咨询</string>
+    <string name="update_version">检查更新</string>
+    <string name="about_us">关于我们</string>
+    <string name="head_pic">头像</string>
+    <string name="name">姓名</string>
+    <string name="account">账号</string>
+    <string name="qq_code">QQ号</string>
+    <string name="email">邮箱</string>
+    <string name="account_not_update">账号不可更改</string>
+    <string name="take_photo">拍照</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="select_photo">从相册选择</string>
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="save">保存</string>
+    <string name="modify_name">修改姓名</string>
+    <string name="modify_qq">修改QQ</string>
+    <string name="modify_email">修改邮箱</string>
+    <string name="modify_phone">修改手机号</string>
+    <string name="input_value">请输入修改的内容</string>
+    <string name="modify_success">修改成功</string>
+    <string name="pwd_not_equal">密码不一致</string>
+
+    <string name="save_space">保&#160;&#160;&#160;&#160;存</string>
+    <string name="confirm_password_hint">请再次输入密码</string>
+    <string name="input_old_password_hint">请输入原密码</string>
+    <string name="input_new_password_hint">请输入新密码</string>
+    <string name="oldpwd_comfirm">请输入旧密码</string>
+    <string name="newpwd_comfirm">请输入新密码</string>
+    <string name="pwd_comfirm">请确认新密码</string>
+    <string name="oldpwd_error">旧密码错误</string>
+    <string name="village_intro">村简介</string>
+    <string name="title_">标题：</string>
+    <string name="content_">内容：</string>
+    <string name="answer_">回答</string>
+    <string name="mqztc_detail">民情直通车详情</string>
+    <string name="fwmdm_detail">服务面对面详情</string>
+    <string name="dbtask">待办事项详情</string>
+    <string name="ybtask">已办事项详情</string>
+    <string name="rwpfxq">任务派发详情</string>
+    <string name="work_log_xq">工作反馈详情</string>
+    <string name="back_man_">反馈人：</string>
+    <!-- NewsActivity -->
+    <string name="xwdt_detail">新闻动态详情</string>
+
+    <!-- NoticeActivity -->
+    <string name="zxtz_detail">最新通知详情</string>
+    <string name="zxtz_detail_tip">下载提醒</string>
+    <string name="zxtz_detail_content">是否确认下载？</string>
+
+    <!-- PartyDetailActivity -->
+    <string name="djxx_detail">党建学习详情</string>
+
+    <!-- WorkSendActivity -->
+    <string name="work_info">任务信息：</string>
+    <string name="back_info">反馈信息：</string>
+    <string name="work_title">任务标题：</string>
+    <string name="work_type">任务类型：</string>
+    <string name="work_des">任务描述：</string>
+    <string name="work_end_time">截止时间：</string>
+    <string name="work_receivor">接收人：</string>
+    <string name="work_fbr">发布人：</string>
+    <string name="work_fj">附件：</string>
+    <string name="mqztc_fj">\u3000\u3000附件：</string>
+    <string name="work_rw_fj">任务附件：</string>
+    <string name="work_fk_fj">反馈附件：</string>
+    <string name="work_fk_content">反馈内容：</string>
+    <string name="work_address">反馈地点：</string>
+    <string name="address_">地点：</string>
+    <string name="get_address">获取反馈地点</string>
+    <string name="back_dx_">反馈对象：</string>
+    <string name="back_sj_">反馈时间：</string>
+    <string name="zf">转&#160;&#160;&#160;&#160;发</string>
+    <string name="work_zf_content">转发说明：</string>
+    <string name="zf_1">转发</string>
+    <string name="zf_info">转发信息</string>
+    <string name="zfr">转发人：</string>
+    <string name="zf_time">转发时间：</string>
+    <string name="th_reason">退回原因：</string>
+    <string name="th_reason_tip">请输入退回原因</string>
+
+    <string name="bzcy">班子成员</string>
+    <string name="bmzz_">部门\n职责</string>
+    <string name="bmzz">部门职责</string>
+    <string name="jyfw">就业服务</string>
+    <string name="dbml">代表\n名录</string>
+    <string name="dbfc">代表\n风采</string>
+    <string name="qlyw">权利\n义务</string>
+    <string name="dbzd">代表\n制度</string>
+    <!-- ConnectFragment -->
+    <string name="address_book">通讯录</string>
+    <string name="contacts_num">%1$d位联系人</string>
+    <string name="search_contacts">搜索联系人</string>
+    <string name="search_not_null">搜索内容不能为空</string>
+    <string name="no_phone">此人暂无联系号码</string>
+
+    <string name="search_name">请输入姓名</string>
+
+    <!-- common -->
+    <string name="load_fail">数据加载失败！</string>
+    <string name="token_fail">您的账号在其他设备上登录，请重新登录</string>
+    <string name="fj">附件：</string>
+    <string name="modify_fail">修改失败</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    <string name="download_failed">下载失败</string>
+    <string name="upload_image_fail">上传失败</string>
+    <string name="upload_image_success">上传成功</string>
+    <string name="version_new">已是最新版本！</string>
+    <string name="setting_version">版本信息：</string>
+    <string name="setting_url">官网：</string>
+    <string name="setting_bq">版权所有：</string>
+    <string name="qcode_download">二维码下载：</string>
+    <string name="jszc">技术支持：</string>
+    <string name="setting_bq_">淮安区河下街道办事处</string>
+    <string name="setting_phone">咨询电话 :</string>
+    <string name="setting_phone_sh">(+86)0517-85818905</string>
+    <string name="company_name">小蜘蛛网络（盐城）有限公司</string>
+    <string name="choose_time">请选择时间</string>
+    <string name="choose_user">请选择接收人</string>
+    <string name="job_title">工作主题：</string>
+    <string name="job_type">工作类型：</string>
+    <string name="finish_what">完成情况：</string>
+    <string name="exist_question">存在问题：</string>
+    <string name="choose_back_user">请选择反馈对象</string>
+
+    <!-- 信息采集 -->
+    <string name="base_info">基础信息</string>
+    <string name="plot_info">小区\n信息</string>
+    <string name="company_info">企业信息</string>
+    <string name="management_info">个体经营户</string>
+    <string name="peoper_info">人口信息</string>
+    <string name="party_info">党员信息</string>
+    <string name="zdry_info">重点\n人员</string>
+
+    <string name="base_info_">基础信息</string>
+    <string name="plot_info_">小区信息</string>
+    <string name="company_info_">企业信息</string>
+    <string name="management_info_">个体经营户</string>
+    <string name="peoper_info_">人口信息</string>
+    <string name="party_info_">党员信息</string>
+
+    <string name="village_name">村名称：</string>
+    <string name="village_snum">宿舍区数：</string>
+    <string name="village_gnum">村干部数：</string>
+    <string name="village_choose">村组选择：</string>
+    <string name="grid_choose">网格选择：</string>
+    <string name="area">面积：</string>
+    <string name="grid_zrr">网格责任人：</string>
+    <string name="grid_pnum">人口数量：</string>
+    <string name="grid_hnum">户数：</string>
+    <string name="grid_wnum">外来人口数量：</string>
+    <string name="sq_km">平方公里</string>
+    <string name="plot_name">小区名称：</string>
+    <string name="plot_name_">小区名称</string>
+    <string name="area_">面积</string>
+    <string name="plot_num">楼房幢数：</string>
+    <string name="plot_num_">楼房幢数</string>
+    <string name="plot_h_num">总户数：</string>
+    <string name="plot_h_num_">总户数</string>
+    <string name="plot_wg_num_">物管人员人数</string>
+    <string name="plot_wg_num">物管人员人数：</string>
+    <string name="plot_bj_num">保洁员人数：</string>
+    <string name="plot_bj_num_">保洁员人数</string>
+    <string name="plot_jdr">社区监督人：</string>
+    <string name="plot_wygs">物业公司：</string>
+    <string name="plot_wygs_phone">物业公司联系方式：</string>
+    <string name="plot_wyzjl">物业总经理：</string>
+    <string name="plot_jdr_">社区监督人</string>
+    <string name="plot_jdr_phone">监督人电话：</string>
+    <string name="plot_jdr_phone_">监督人电话</string>
+    <string name="plot_zrr_phone_">责任人电话</string>
+    <string name="plot_zrr_phone">责任人电话：</string>
+    <string name="plot_zrr_">小区责任人</string>
+    <string name="plot_zrr">小区责任人：</string>
+    <string name="c_name">企业名称：</string>
+    <string name="c_name_">企业名称</string>
+    <string name="m_name">商户名称：</string>
+    <string name="m_name_">商户名称</string>
+    <string name="c_no">营业执照号：</string>
+    <string name="c_zczb">注册资本：</string>
+    <string name="c_zcsj">注册时间：</string>
+    <string name="c_no_">营业执照号</string>
+    <string name="zg_num">员工人数：</string>
+    <string name="yyzz">营业执照：</string>
+    <string name="yyzz_">营业执照</string>
+    <string name="zg_num_">员工数量</string>
+    <string name="kpqk_">开票情况：</string>
+    <string name="kpqk">开票情况</string>
+    <string name="rjgz">人均工资：</string>
+    <string name="isns">是否纳税：</string>
+    <string name="nsqk">纳税情况：</string>
+    <string name="nsqk_">纳税情况</string>
+    <string name="lxr">联系人：</string>
+    <string name="lxr_">联系人</string>
+    <string name="fr_">法人：</string>
+    <string name="lxr_phone">联系人号码：</string>
+    <string name="lxr_phone_">联系人号码</string>
+    <string name="jy_area">经营范围：</string>
+    <string name="jy_area_">经营范围</string>
+    <string name="address">地址：</string>
+    <string name="jyaddress">经营地址：</string>
+    <string name="jyaddress_">经营地址</string>
+    <string name="hj_address">户籍地址：</string>
+    <string name="now_address">现地址：</string>
+    <string name="kn_reason">困难原因：</string>
+    <string name="fywt">反映问题：</string>
+    <string name="dy_">待遇：</string>
+    <string name="bz">备注：</string>
+    <string name="bz_">备注</string>
+    <string name="qylx_bz">备注：\n1、交通运输，包括：垃圾清运、货运、运输等。\n2、生活服务，包括：清洁、家政、婚庆、美容美发、摄影等。\n3、建筑服务，包括：场地、屋面防水、建筑物、修缮、管道安装、装饰服务、园林绿化、疏浚等。\n4、现代服务，包括：租赁、广告设计、仓储、评估、物业管理、安保、人力资源等。\n5、销售无形资产，包括：转让专利技术、网络游戏虚拟道具等。\n6、其他制造业，包括：货物生产、制造、加工、修理、机械加工、服装加工等。\n7、娱乐服务，包括：为娱乐服务提供场所和服务，含热气球及游戏机等。\n8、装卸搬运服务，包括：吊装、装卸、拖车、叉车等。</string>
+    <array name="baseinfo">
+        <item>村信息</item>
+        <item>网格信息</item>
+    </array>
+    <array name="ryinfo">
+        <item>低保人员</item>
+        <item>残疾人员</item>
+        <item>育龄妇女</item>
+    </array>
+
+    <array name="building_info">
+        <item>新思想</item>
+        <item>即送达</item>
+        <item>恩来精神</item>
+        <item>党员冬训</item>
+    </array>
+
+    <array name="dw_info">
+        <item>点位类型</item>
+        <item>村居</item>
+    </array>
+
+    <array name="relationType">
+        <item>夫妻</item>
+        <item>父子</item>
+        <item>父女</item>
+        <item>母子</item>
+        <item>母女</item>
+        <item>婆媳</item>
+        <item>兄弟</item>
+        <item>兄妹</item>
+    </array>
+
+    <string name="name_">姓名：</string>
+    <string name="znname_">子女姓名：</string>
+    <string name="hzName_">户主姓名：</string>
+    <string name="dbzh_">低保证号：</string>
+    <string name="dbs_">低保人口数：</string>
+    <string name="cjzh_">残疾证号：</string>
+    <string name="cjlx_">残疾类型：</string>
+    <string name="birth_">出生年月：</string>
+    <string name="birth">出生年月</string>
+    <string name="db_type">低保类型：</string>
+    <string name="hj_type">户籍类型：</string>
+    <string name="jhrname_">监护人姓名：</string>
+    <string name="type_">类型：</string>
+    <array name="jlfz_type_list">
+        <item>省扶</item>
+        <item>市扶</item>
+        <item>失独</item>
+        <item>伤残</item>
+    </array>
+
+    <array name="cj_type_list">
+        <item>持证残疾人</item>
+        <item>享受重残生活补贴人员</item>
+        <item>享受其他类生活补贴人员</item>
+        <item>享受一级护理补贴人员</item>
+        <item>享受二级护理补贴人员</item>
+    </array>
+
+    <array name="jcqk_array">
+        <item>合格</item>
+        <item>不合格</item>
+    </array>
+    <array name="hldj_array">
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+    </array>
+
+    <array name="tkgy_type_list">
+        <item>集中供养人员</item>
+        <item>分散供养人员</item>
+        <item>城市三无人员</item>
+        <item>孤儿及困境儿童</item>
+    </array>
+    <array name="hotline_type_list">
+        <item>健康热线</item>
+        <item>服务热线</item>
+        <item>紧急求救电话</item>
+        <item>报警服务热线</item>
+        <item>便民热线</item>
+        <item>报修热线</item>
+        <item>客服热线</item>
+        <item>售后服务热线</item>
+        <item>咨询热线</item>
+    </array>
+    <array name="zlj_type_list">
+        <item>80-89周岁人员</item>
+        <item>90-99周岁人员</item>
+        <item>100周岁以上</item>
+    </array>
+
+    <array name="yfdx_type_list">
+        <item>参战涉核人员</item>
+        <item>伤残军人</item>
+        <item>复员军人遗孀</item>
+        <item>在乡复员军人</item>
+        <item>老年退伍军人</item>
+        <item>老年烈士子女</item>
+    </array>
+
+    <array name="dbtype">
+        <item>城市</item>
+        <item>农村</item>
+    </array>
+    <array name="hjtype">
+        <item>本村</item>
+        <item>挂户</item>
+    </array>
+    <string name="join_time_">入党时间：</string>
+    <string name="join_time">入党时间</string>
+    <string name="ssdzb_">所属党支部：</string>
+    <string name="ssdzb">所属党支部</string>
+    <string name="lx_phone_">联系电话：</string>
+    <string name="lx_phone">联系电话</string>
+    <string name="xl_">学历：</string>
+    <string name="dy_type_">党员类型：</string>
+    <array name="xl_list">
+        <item>小学</item>
+        <item>初中</item>
+        <item>高中</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+        <item>其他</item>
+    </array>
+    <array name="dy_type_list">
+        <item>非困难党员</item>
+        <item>困难党员</item>
+    </array>
+
+    <array name="dy_ldtype_list">
+        <item>本地</item>
+        <item>流入</item>
+        <item>流出</item>
+    </array>
+    <string name="sfzh_">身份证号：</string>
+    <string name="sfzh">身份证号</string>
+    <string name="fname">父亲姓名：</string>
+    <string name="fsfzh">父亲身份证：</string>
+    <string name="mname">母亲姓名：</string>
+    <string name="msfzh">母亲身份证：</string>
+    <string name="jt_address">家庭住址：</string>
+    <string name="qylb">企业类别：</string>
+    <string name="qylx">企业类型：</string>
+    <string name="gtlx">个体类型：</string>
+    <string name="lx_">类型：</string>
+    <string name="mc_">名称：</string>
+    <array name="qylx_list">
+        <item>列统企业</item>
+        <item>民营企业</item>
+        <item>集体企业</item>
+        <item>总部企业</item>
+    </array>
+    <array name="pbqk">
+        <item>合格</item>
+        <item>不合格</item>
+    </array>
+    <array name="gtlx_list">
+        <item>经营烟花爆竹商户</item>
+        <item>肉皮作坊</item>
+        <item>豆制品加工</item>
+        <item>其他</item>
+    </array>
+    <array name="qtlx_list">
+        <item>建筑工地</item>
+        <item>特种设备</item>
+        <item>危险化学品</item>
+        <item>成品油</item>
+        <item>其他</item>
+    </array>
+    <!-- 服务面对面 -->
+    <string name="consult_self">我要咨询</string>
+    <string name="question">问：</string>
+    <string name="answer">答：</string>
+    <string name="q_title">问题标题：</string>
+    <string name="q_des">问题描述：</string>
+    <string name="commit">提交</string>
+    <string name="commit_space">提&#160;&#160;&#160;&#160;交</string>
+    <string name="commit_success">提交成功！</string>
+    <string name="del_success">成功删除！</string>
+    <string name="del_fail">删除失败！</string>
+    <string name="fwmdm_title_null">标题为空</string>
+    <string name="fwmdm_des_null">描述为空</string>
+    <string name="commit_fail">提交失败！</string>
+    <string name="question_self">我要反映</string>
+    <string name="search">搜索</string>
+    <string name="enter_key">输入关键字</string>
+
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <!-- 代办事项 -->
+    <string name="feedback">反馈</string>
+    <string name="cx">撤销</string>
+    <string name="cx_fail">撤销失败</string>
+    <string name="cx_success">撤销成功</string>
+    <string name="work_send">分派</string>
+    <string name="work_send_time">分派时间：</string>
+    <string name="work_send_ren">接受人：</string>
+    <string name="work_send_ren_">派发人：</string>
+    <string name="no_fj">无附件</string>
+    <string name="no_power">暂无此权限</string>
+
+    <string name="look_grid_info">查看网格信息</string>
+    <string name="look_xs_info">查看工作信息</string>
+    <string name="grid_function">网格功能选择</string>
+
+    <string name="choose_zrr">请选择责任人</string>
+    <string name="choose_ajy">请选择安监员</string>
+    <string name="choose_dzz">请选择党小组长</string>
+    <string name="choose_hsy">请选择护税员</string>
+    <string name="choose_jhld">请选择结合领导</string>
+    <string name="choose_wgy">请选择网格员</string>
+    <string name="choose_ghy">请选择管护人</string>
+    <string name="choose_bar">请选择包案人</string>
+
+    <string name="baidu_map">地图定位</string>
+
+    <string name="grid_">网格号：</string>
+    <string name="area_km_">面积（平方公里）：</string>
+    <string name="rknum_">人口：</string>
+    <string name="dynum_">党员：</string>
+    <string name="csdbnum_">城市低保：</string>
+    <string name="ncdbnum_">农村低保：</string>
+    <string name="ylfnnum_">育龄妇女：</string>
+    <string name="jlfznum_">奖励扶助：</string>
+    <string name="ldrknum_">流动人口：</string>
+    <string name="jsknnum_">计生困难：</string>
+    <string name="dsznnum_">独生子女：</string>
+    <string name="sdjtnum_">失独家庭：</string>
+    <string name="dlts_">道路条数：</string>
+    <string name="htts_">河塘条数：</string>
+    <string name="ljqyy_">垃圾清运员：</string>
+    <string name="ldbjy_">流动保洁员：</string>
+    <string name="qynum_">企业：</string>
+    <string name="gtnum_">个体：</string>
+    <string name="hjghr_">环境管护人：</string>
+    <string name="ywxcy_">义务宣传员：</string>
+    <string name="xqnum_">小区：</string>
+    <string name="wjhnum_">违建户：</string>
+
+    <string name="csdb">城市低保</string>
+    <string name="ncdb">农村低保</string>
+    <string name="ylfn">育龄妇女</string>
+    <string name="qy">企业</string>
+    <string name="qy_">企业：</string>
+    <string name="gt">个体工商户</string>
+    <string name="gt_">个体工商户：</string>
+    <string name="cjr">残疾人员</string>
+    <string name="base_info_1">基本信息</string>
+    <string name="party_name_">党员姓名：</string>
+    <string name="have_cun_">所属村：</string>
+    <string name="have_grid_">所属网格：</string>
+    <string name="have_dzb_">所属党支部：</string>
+
+    <string name="xq_">选区：</string>
+    <string name="age_">年龄：</string>
+    <string name="dw_zw_">单位及职务：</string>
+    <string name="dbjc_">代表阶层：</string>
+
+
+    <string name="building">建设中...</string>
+    <string name="double_exit">双击退出</string>
+
+    <string name="re_work_back">工作标题重复</string>
+
+    <string name="loacl_choose">从本地选择</string>
+
+    <string name="image_tip">(友情提示:长按图片可以删除已添加图片)</string>
+    <string name="cjjj">村居简介</string>
+    <string name="cjjg">组织架构</string>
+    <string name="wggzgk">网格工作概况</string>
+    <string name="djgzzz">党建工作职责</string>
+    <string name="djzzjg">党建组织架构</string>
+    <string name="mzgzzz">民政工作职责</string>
+    <string name="mzzzjg">民政组织架构</string>
+    <string name="qygzzz">企业服务工作职责</string>
+    <string name="qyzzjg">企业服务组织架构</string>
+    <string name="xsgzzz">协税护税工作职责</string>
+    <string name="xszzjg">协税护税组织架构</string>
+    <string name="aqgzzz">应急服务工作职责</string>
+    <string name="aqzzjg">应急服务组织架构</string>
+    <string name="xfgzzz">和谐社区工作职责</string>
+    <string name="xfzzjg">和谐社区组织架构</string>
+    <string name="jhgzzz">卫生健康工作职责</string>
+    <string name="jhzzjg">卫生健康组织架构</string>
+    <string name="sfgzzz">政法综治工作职责</string>
+    <string name="sfzzjg">政法综治组织架构</string>
+    <string name="cxgzzz">长效管理工作职责</string>
+    <string name="cxzzjg">长效管理组织架构</string>
+    <string name="fwgzzz">防伪治违工作职责</string>
+    <string name="fwzzjg">防伪治违组织架构</string>
+
+    <string name="youke_tiyan">温馨提示：游客账号youke；密码123456</string>
+    <string name="file_tip">非图片，请在本地查看该文件</string>
+    <string name="rdzj_bmzz_content_2">&#160;&#160;&#160;一、出席本级人民代表大会会议,参加审议各项议案、报告和其他议题,发表意见。\n&#160;&#160;&#160;二、依法联名提出议案、质询案、罢免案等。\n&#160;&#160;&#160;三、提出对各方面工作的建议、批评和意见。\n&#160;&#160;&#160;四、参加本级人民代表大会的各项选举。\n&#160;&#160;&#160;五、参加本级人民代表大会的各项表决。\n&#160;&#160;&#160;六、获得依法执行代表职务所需的信息和各项保障。\n&#160;&#160;&#160;七、法律规定的其他权利。</string>
+    <string name="rdzj_bmzz_content_1">&#160;&#160;&#160;一、模范遵守宪法和法律，保守国家秘密，在自己参加的生产、工作和社会活动中，协助宪法和法律的实施。\n&#160;&#160;&#160;二、按时出席本级人民代表大会会议，认真审议各项议案、报告和其他议题，发表意见，做好会议期间的各项工作。\n&#160;&#160;&#160;三、积极参加统一组织的视察、专题调研、执法检查等履职活动。\n&#160;&#160;&#160;四、加强履职学习和调查研究，不断提高执行代表职务的能力。\n&#160;&#160;&#160;五、与原选区选民或者原选举单位和人民群众保持密切联系，听取和反映他们的意见和要求，努力为人民服务。\n&#160;&#160;&#160;六、自觉遵守社会公德，廉洁自律，公道正派，勤勉尽责。\n&#160;&#160;&#160;七、法律规定的其他义务。</string>
+
+    <string name="rdzj_bmzz_content">一、负责联系街道辖区内的人民代表大会代表。\n二、组织代表开展活动。\n三、反映代表和群众的建议、批评和意见。\n四、办理区人大常委会交办的监督、选举以及其他工作。\n五、向区人大常委会报告工作。\n</string>
+    <string name="rdzj_bmzz_content_3">一、在区人大常委会和街道党工委的领导下，主持街道人大工委全面工作。\n二、负责召集街道人大工委会议和选民代表会议。\n三、牵头制定街道人大工委年度工作计划。\n四、联系走访辖区内的人大代表，组织人大代表开展学习、视察、检查、评议、调研等活动，提出建议意见。\n五、指导“人大代表之家”、“人大代表工作室”开展代表活动，为代表履职提供支持和保障。\n六、跟踪代表建议办理情况，认真处理人大代表和人民群众来信来访。\n七、向代表通报街道人大工委及本人工作情况，听取代表意见和建议。\n八、向区人大常委会汇报街道人大工委工作情况。\n九、根据区人大常委会的安排，列席区人大常委会会议、参加相关活动。\n十、完成区人大常委会及主任会议交办的其他工作。</string>
+    <string name="rdzj_bmzz_content_4">一、街道人大工委办公室是街道人大工委的日常工作部门，根据工委主任的安排，负责处理街道人大工委日常工作。\n二、在区人民代表大会会议期间，负责做好代表团联络和代表履职服务工作。\n三、在区人民代表大会闭会期间，主要职责：\n（一）负责起草街道人大工委工作计划、总结；\n（二）负责街道人大工委例会的准备和记录；\n（三）负责拟定街道人大工委主任联系代表、代表联系选民安排表，并记录联系情况；\n（四）负责人大代表履职学习培训、开展视察、专题调研、执法检查、工作评议、联系选民、向选民述职、选民代表会议等服务工作；做好代表履职考核记录工作；\n（五）按照代表建议涉及职权范围，做好代表建议的转办、交办、督办工作，并向代表反馈，向社会公开；\n（六）向代表通报区人大常委会和街道人大工委工作情况；分发、寄送有关资料和期刊，为代表知情知政服务；\n（七）负责受理人民群众来信来访并转办、督办。\n四、负责街道人大工委工作宣传，及时发布街道人大工委工作、“人大代表之家”或“人大代表工作室”活动及代表履职信息等，大力宣传代表履职先进事迹。\n五、办理区人大常委会工作机构交办的有关工作。</string>
+
+    <string name="rdzj_dbzd_content_1">一、代表在闭会期间的活动以集体活动为主，以代表小组活动为基本形式。\n二、代表组年初制定年度活动计划。\n三、代表组活动每年不少于4次。\n四、代表组活动由小组召集人组织，开展活动3天前应将活动的有关事项通知本组全体代表。\n五、每位代表要准时参加活动，确因特殊情况不能参加活动的，应当向代表组召集人请假。\n六、代表组的活动情况，应向区人民代表大会常务委员会报告。</string>
+    <string name="rdzj_dbzd_content_2">一、代表履职学习的主要内容是人民代表大会制度以及执行代表职务所需的法律知识和其他专业知识。\n二、代表学习培训采取集中培训、会前培训和个人自学相结合的方式。集中培训：根据区人大常委会和街道人大工作安排，组织本辖区人大代表参加区人大常委会和街道人大举办的集中培训；会前培训：代表组组织代表活动前，准备好专题，开展会前（活动前）专题学习培训；个人自学。\n三、代表学习培训注重将理论知识与履职实践	相结合。通过参加视察、调研、执法检查等活动，学习相关的法律、法规和专业知识。\n四、代表学习培训活动由代表组组织开展，每次学习要进行考勤，并安排人员做好记录。\n五、代表要按时参加学习培训活动，认真做好笔记，注重学习成效，不断提高履职能力和水平。</string>
+    <string name="rdzj_dbzd_content_3">代表必须和原选区选民保持密切联系，每位代表应当固定联系3名以上选民。联系选民要做好记录，填写《人大代表联系选民登记表》。收集的问题要及时向有关部门反映，并督促解决落实。\n一、定期走访选民，广泛接触选民，了解反映人民群众的意见和要求。\n二、利用视察调研活动联系选民，深入基层实地视察、调查研究，有针对性地听取意见。\n三、召开选民座谈会，围绕群众关心的热点难点问题，收集群众对各方面工作的意见和建议。\n四、结对帮扶贫困家庭，切实为群众做好事、解难事。\n五、电话联系，了解选民的生产生活、思想情况。</string>
+    <string name="rdzj_dbzd_content_4">一、为进一步密切代表与选民的联系，街道人大工委每季度末组织一次代表接待选民活动。\n二、代表接待选民活动的地点一般安排在“人大代表之家”，也可以根据具体情况确定其他地点。\n三、代表接待选民活动，由代表轮流参加。\n四、每次代表接待选民活动三天前，应发布代表接待选民公告，告知具体的接待时间、地点和参与接待的代表名单。\n五、代表在接待选民时要佩戴代表证；在接待过程中，要认真听取选民反映的问题和意见，并认真做好记录，填写《人大代表接待选民登记表》，但不直接处理问题。\n六、代表在接待选民过程中，对于选民反映的问题和意见，需要进行解释和说明的，应当耐心细致地做好解释和说明工作。\n七、代表在接待选民后，对于选民反映的问题和意见，需要由有关机关或组织办理的，要认真归纳整理，交由街道人大工委或区人大常委会人代联委进行处理。\n八、对于接待中选民反映的问题和意见是属于人大职权范围内的事项或者具有普遍性、代表性的问题，代表可以通过议案或建议（批评、意见）的形式提出。</string>
+    <string name="rdzj_dbzd_content_5">一、代表视察调研是代表在闭会期间的一项重要职权，代表应积极参加。\n二、代表视察调研原则上每季度不少于1次，根据工作需要可适当增加视察调研次数，街道人大工委负责组织。\n三、区人大代表根据区人大常委会的安排，对本级或者下级国家机关和有关单位的工作进行视察，代表也可以根据安排，围绕经济社会发展和关系人民群众切身利益、社会普遍关注的重大问题，开展专题调研。\n四、代表视察调研要有周密的组织安排，有计划、有准备。要确定视察调研的目的、内容和时间，确定视察调研的对象，提前与被视察单位联系，了解并掌握有关政策和法律、法规，为分析研究问题做好准备。代表可以向视察调研单位提出建议、批评和意见，但不直接处理问题。\n五、代表参加视察、专题调研活动形成的报告，由区人民代表大会常务委员会人代联委转交有关机关、组织。对报告中提出的意见和建议的研究处理情况应当向代表反馈。</string>
+    <string name="rdzj_dbzd_content_6">一、代表述职按选区进行，每位代表在一届任期内都要向原选区的选民述职一次。\n二、代表的述职活动由街道人大工委组织。\n三、代表述职的主要内容：\n1.学习宣传和贯彻执行宪法、法律、法规以及人大决议、决定的情况；\n2.参加人代会期间审议议案和各项工作报告，以及提出议案与建议、批评和意见等情况；\n3.参加闭会期间各项代表活动的情况；\n4.联系选民、听取和反映选民意见和要求，为群众办实事的情况等。\n四、代表应当按照述职内容的要求，认真总结履职情况，撰写好述职报告。\n五、代表述职会议由原选区选民代表参加，人数一般不少于50人。\n六、代表述职一般应采取口头述职的方式进行，述职后由选民对其进行评议，提出意见和建议，并进行测评，测评结果应当场公布。\n七、选民评议意见和测评结果汇总后应书面反馈代表本人。\n八、代表的述职报告，以及汇总后的选民评议意见和测评结果等材料应及时收集、留存，测评结果同时报区人大常委会人代联委。</string>
+    <string name="rdzj_dbzd_content_7">一、为了进一步调动代表参政议政的积极性，强化代表对国家机关工作人员监督，根据《代表法》制定本制度。\n二、评议对象：街道各部门和上级直管单位。\n三、参评人员：区级以上人大代表。\n四、评议工作在街道人大工委统一组织和领导下进行。\n五、评议内容：被评议部门或单位履行职责的情况。包括是否认真贯彻实施法律、法规；是否正确地行使法律赋予的权力和履行了应尽的义务；是否忠于职守、勤政为民、廉洁奉公等。\n六、评议方式：可采取听汇报、实地视察、走访相关单位和选民等方式，组织参加评议的代表进行讨论，发表意见，对被评议单位的工作实事求是地作出评价。既肯定成绩，也要指出存在的问题，并提出改进的意见。</string>
+    <string name="rdzj_dbzd_content_8">一、代表要模范遵守宪法和法律，维护宪法和法律的权威，维护人民代表大会制度，廉洁自律，依法履职。\n二、代表要自觉抵制任何形式贿选和破坏选举的行为，发现情况及时报告。\n三、代表不得利用职权和职务上的影响索取、接受单位或者个人的财物。\n四、代表在视察调研、联系群众等履行代表职务时，不得接受所在单位或个人的宴请、礼品、礼金和各种有价证券。\n五、代表不得利用职权和职务上的影响，为个人或亲属谋取不正当利益，不得干预司法办案。\n六、代表开展活动时，要严格执行中央八项规定，省委十项规定，市委十二项规定，区委二十六项规定。\n七、代表不得脱离实际、弄虚作假、损害群众利益，不得搞“形象工程”和“政绩工程”，不得以不正当手段获取荣誉，不得从事有悖社会公德、职业道德、家庭美德的活动。\n八、代表违反本制度规定的，视情节轻重给予批评教育或劝其辞去代表职务，情节特别严重的，依纪依法严肃处理。</string>
+
+
+    <string name="contact_notification_someone_agree_your_request">%1$s已同意你的好友请求</string>
+    <string name="contact_notification_agree_your_request">对方已同意你的好友请求</string>
+    <string name="de_dialog_item_message_delete">删除消息</string>
+    <string name="other_devices_text">您的账号在别的设备上登录，您被迫下线!</string>
+    <string name="phone_number_is_null">手机号不能为空</string>
+    <string name="password_is_null">密码不能为空</string>
+    <string name="i_know">知道了</string>
+    <string name="check_network">请检查网络</string>
+    <string name="new_friends">新的朋友</string>
+    <string name="agreed_friend">已同意好友关系</string>
+    <string name="ac_new_friend_list_no_data">暂无数据</string>
+    <string name="layout_dialog_loading">正在加载</string>
+    <string name="chat">会话</string>
+    <string name="contacts">通讯录</string>
+    <string name="discover">发现</string>
+    <string name="me">我</string>
+    <string name="item_filter_group_list_include">包含：</string>
+    <string name="update_app_model_prepare">准备下载</string>
+    <string name="update_app_model_progress">正在下载 %1$d%2$s</string>
+    <string name="update_app_model_success">下载成功(点击安装)</string>
+    <string name="update_app_model_error">下载失败(点击浏览器下载)</string>
+    <string name="original_password_text">初始密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="original_password">原密码不能为空</string>
+    <string name="new_password_not_null">新密码不能为空</string>
+    <string name="confirm_password_not_null">确认密码不能为空</string>
+    <string name="original_password_mistake">原密码填写错误</string>
+    <string name="passwords_invalid">密码必须为6-16位字符，区分大小写</string>
+    <string name="passwords_do_not_match">填写的确认密码与新密码不一致</string>
+    <string name="dialog_bottom_picture">拍照</string>
+    <string name="dialog_bottom_import_from_local">从本地导入</string>
+    <string name="share_dialog_cancel">取消</string>
+    <string name="rs_ada_user_ship_add">已添加</string>
+    <string name="agree">接&#160;&#160;&#160;受</string>
+    <string name="request">已请求</string>
+    <string name="ignore">已忽略</string>
+    <string name="added">已添加</string>
+    <string name="deleted">已删除</string>
+    <string name="private_chat">发起聊天</string>
+    <string name="group_chat">创建群组</string>
+    <string name="add_contacts">添加好友</string>
+    <string name="no_read_message">"···"</string>
+    <string name="clear_success">清除成功</string>
+    <string name="Search">搜索</string>
+    <string name="No_friends">暂无好友</string>
+    <string name="group">群组</string>
+    <string name="public_service">公众号</string>
+    <string name="network_not_available">网络不可用</string>
+    <string name="login_api_fail">登录请求接口失败</string>
+    <string name="sync_userinfo_api_fail">同步用户信息接口请求失败</string>
+    <string name="get_token_api_fail">获取token请求接口失败</string>
+    <string name="phone_or_psw_error">手机或者密码错误</string>
+    <string name="remove_group_member">移除群组成员</string>
+    <string name="add_group_member">添加群组成员</string>
+    <string name="select_group_member">选择群组成员</string>
+    <string name="select_contact">选择联系人</string>
+    <string name="add_successful">添加成功</string>
+    <string name="remove_successful">移除成功</string>
+    <string name="remove_group_members">确认移除以下群成员?</string>
+    <string name="least_one_friend">至少选择一位好友</string>
+    <string name="ac_search_phone_number">手机号</string>
+    <string name="search_friend">添加好友</string>
+    <string name="request_success">请求成功</string>
+    <string name="add_friend">加为好友</string>
+    <string name="add_text">加好友信息...</string>
+    <string name="de_actionbar_system">"系统消息"</string>
+    <string name="main_customer">意见反馈</string>
+    <string name="de_actionbar_sub_defult">"聊天"</string>
+    <string name="de_actionbar_sub_group">"群组"</string>
+    <string name="de_actionbar_sub_private">"我的私人会话"</string>
+    <string name="de_actionbar_sub_discussion">"我的讨论组"</string>
+    <string name="de_actionbar_sub_system">"系统消息"</string>
+    <string name="group_name_not_is_null">群组昵称不能为空</string>
+    <string name="group_name_size_is_one">群名称不少于2个字</string>
+    <string name="create_group_success">群组创建成功</string>
+    <string name="group_header_api_fail">群组头像接口请求失败</string>
+    <string name="group_create_api_fail">群组创建接口请求失败</string>
+    <string name="upload_portrait_failed">上传头像失败</string>
+    <string name="edit_group_name">填写群名称(2-10字)</string>
+    <string name="fr_group_list_not_join_the_group">暂未加入群组</string>
+    <string name="my_groups">群组</string>
+    <string name="ac_group_list_group_number">%1$d个群组</string>
+    <string name="all_group_member">全部群成员</string>
+    <string name="group_member_online_status">群成员在线状态</string>
+    <string name="group_announcement">群公告</string>
+    <string name="group_code">群二维码</string>
+    <string name="total_member">群成员</string>
+    <string name="message_notice">消息免打扰</string>
+    <string name="search_message">查找聊天记录</string>
+    <string name="clean_message">清除聊天记录</string>
+    <string name="change_group_name">修改群名称为</string>
+    <string name="group_name">群名称</string>
+    <string name="set_top">会话置顶</string>
+    <string name="quit_group">删除并退出</string>
+    <string name="dismiss_group">解散并退出</string>
+    <string name="change_group_info">更改群组信息</string>
+    <string name="group_info">群组信息</string>
+    <string name="group_portrait">群头像</string>
+    <string name="group_member_size">全部群成员</string>
+    <string name="quit_success">退出成功</string>
+    <string name="dismiss_success">解散成功</string>
+    <string name="dismiss_fail">解散失败</string>
+    <string name="update_success">更改成功</string>
+    <string name="video_layout_loading">Loading...</string>
+    <string name="qly">千里眼</string>
+    <string-array name="options">
+        <item>选择图片</item>
+        <item>拍照</item>
+    </string-array>
+
+    <!--劳动保障-->
+    <string name="ls_show">劳动展示</string>
+    <string name="ls_from">劳动收集</string>
+    <string name="ls">劳动保障</string>
+    <string name="ls_index_js">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;劳动保障的内容是主体的独立人格、法律地位和物质利益。主体的独立人格是获得法律地位的前提，而独立的法律地位又是实现物质利益的前提。劳动保障首先要确立和维护劳动者和用人单位的独立人格和法律地位。劳动者要独立于国家、独立于资本、独立于其他任何人，成为能够自由支配自己劳动力、享有自主择业权的主人；用人单位要独立于国家、独立于其他单位，成为能够自主经营，拥有用工自主权的市场主体。劳动保障其次是要保障主体的物质利益。维护主体人格和法律地位的目的是为了实现和保障主体的物质利益。</string>
+    <string name="ls_index_ml">信息展示</string>
+    <string name="ls_cx_01">城乡居民基本养老保险：</string>
+    <string name="ls_cx_02">城乡居民医疗保险：</string>
+    <string name="ls_cx_03">社区劳动保障工作站：</string>
+    <string name="ls_cx_04">代办社会保险</string>
+    <string name="ls_cx_05">被征地农民保障服务</string>
+    <string name="ls_cx_06">劳动监察、劳动争议仲裁</string>
+    <string name="ls_cx_07">村列表</string>
+    <string name="ls_workstation">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;淮安区人社局劳动就业处在河下街道辖区内下派5个劳动保障工作站，主要负责：1、开展辖区内城乡劳动力资源、就业、社会保障、劳动关系等调查摸底，建立用人单位、劳动力资源、劳动力就业和社会保险等基础台账，核实信息、动态管理等；2、就业、失业登记，就业困难认定，创业担保等申请初审；3、协助开展辖区内就业创业服务，职业技能培训、就业援助；4、协助开展劳动监察、劳动争议和用工管理等；5、协助社会保险参保服务，关系转接等后续管理工作。</string>
+    <string name="ls_service_scope">服务范围：</string>
+    <string name="ls_business_address">办公地址：</string>
+    <string name="ls_principal">负责人：</string>
+    <string name="ls_principal_phone">负责人电话：</string>
+    <string name="ls_ss_js">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;负责宣传国家相关法律法规，动员用工单位、劳动者参保并负责登记、缴费：（一）单位参保准备材料（养老、医疗、失业、工伤、生育五险）：1、提供单位营业执照、组织代码证、税务登记证、银行开户证明、员工合同、身份证等原件及复印件；2、法人身份证原件及复印件且法人已经参保；3、填写社会保险登记表；4、参保人员花名册。（二）自由职业者参保准备材料（养老、医疗两险）：1、淮安区户籍（男16-59、女16-54周岁）；2、身份证、户口本原件及复印件；3、相片；4、填写申请表。</string>
+    <string name="ls_ss_01">部门负责人：</string>
+    <string name="ls_ss_01_phone">部门负责人电话：</string>
+    <string name="ls_ss_02">部门经办人：</string>
+    <string name="ls_ss_02_phone">部门经办人电话：</string>
+    <string name="ls_ls_js">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;被征地农民保障服务负责宣传、解读被征地农民保障政策，办理被征地农民参加基本生活保障申请工作</string>
+    <string name="ls_lsv_js">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;负责宣传国家相关法律法规，劳动者的权利与义务，规范企业用工以及劳动者行为职业，主要工作：1、用人单位劳动保障制度、劳动合同订立、保险缴纳情况；2、女工和未成年人保护、禁止使用童工；3、工作时间、休息时间、工资支付情况；4、职业介绍、技能培训考核情况；5、其他监察事项；6、受理劳动争议案件；7、讨论重大、疑难劳动争议案件；8、对仲裁活动进行监察。 </string>
+    <string name="ls_lsv_01">上级业务主管部门：</string>
+    <string name="ls_lsv_02">办公地址：</string>
+    <string name="ls_lsv_03">街道协理员：</string>
+    <string name="ls_ri_js">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;宣传城乡居民基本养老保险相关政策，负责街道农民、居民养老保险，内容包括：1、参保登记；2、保费征缴；3、到龄申领（领取待遇）；4、中断补缴；5、待遇认证；6、注销（死亡注销、享受其他待遇注销）。</string>
+    <string name="ls_ri_01">联系电话：</string>
+    <string name="ls_ri_02">街道职能部门：</string>
+    <string name="ls_village_01">村级负责人：</string>
+    <string name="ls_village_01_phone">村级负责人电话：</string>
+    <string name="ls_village_02">村级经办人：</string>
+    <string name="ls_village_02_phone">村级经办人电话：</string>
+    <string name="ls_village_03">网格地图</string>
+    <string name="ls_village_04">网格责任人：</string>
+    <string name="ls_rm_js">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在淮安区医疗保险处指导下，负责宣传医疗保险相关政策，登记参加城乡居民医疗保险人员信息，收取参保保费，导入、录入参保人员信息，校队系统数据等。</string>
+    <string name="ls_wgzrr">网格责任人：</string>
+    <string name="ls_wgzrr_phone">网格责任人电话：</string>
+    <string name="ls_cx_03_title">社区劳动保障工作站</string>
+    <string name="ls_cx_01_title">城乡居民基本养老保险</string>
+    <string name="ls_cx_02_title">城乡居民医疗保险</string>
+    <string name="none">无</string>
+    <string name="zero">0</string>
+
+    <string name="gzzmc">工作站名称：</string>
+    <string name="gzzfwfw">服务范围：</string>
+    <string name="gzzbgdz">办公地址：</string>
+    <string name="gzzfzr">负责人：</string>
+    <string name="gzzfzrdh">负责人电话：</string>
+
+    <string name="bmfzr">部门负责人：</string>
+    <string name="fzrdh">负责人电话：</string>
+    <string name="jbr">部门经办人：</string>
+
+    <string name="jcbumen">上级业务主管部门：</string>
+    <string name="jcadress">办公地址：</string>
+    <string name="jcjdgly">街道协理员：</string>
+
+    <string name="bxjbxx">基本信息：</string>
+    <string name="bxzgbm">主管部门：</string>
+    <string name="bxlxdh">联系电话：</string>
+    <string name="bxznbm">职能部门：</string>
+    <string name="bxfzr">负责人：</string>
+    <string name="bxfzrhm">负责人号码：</string>
+    <string name="bxjbr">经办人：</string>
+    <string name="bxjbrhm">经办人号码：</string>
+    <string name="xly">协理员：</string>
+    <string name="xlyphone">协理员电话：</string>
+    <string name="ylbx_01">养老保险</string>
+    <string name="ylbx_02">医疗保险</string>
+    <string name="bzgzz">工作站</string>
+    <string name="infoshow">信息展示</string>
+
+
+    <string name="ywkd">要闻快递</string>
+    <string name="lzjy">廉政教育</string>
+    <string name="qfrx">清风河下</string>
+</resources>

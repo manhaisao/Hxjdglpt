@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/login_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              tools:context="com.xzz.hxjdglpt.activity.RegisterActivity">
+
+    <include
+        android:id="@+id/register_rl"
+        layout="@layout/lay_title"
+        android:visibility="gone"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/reg_middle_left"
+            android:layout_marginRight="@dimen/reg_middle_left"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/reg_input_account"
+            android:padding="10dp"
+            android:textSize="@dimen/reg_text_size"></EditText>
+
+        <EditText
+            android:id="@+id/register_realname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/reg_middle_left"
+            android:layout_marginRight="@dimen/reg_middle_left"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/reg_input_realname"
+            android:padding="10dp"
+            android:textSize="@dimen/reg_text_size"></EditText>
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/reg_middle_left"
+            android:layout_marginRight="@dimen/reg_middle_left"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/reg_input_phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textSize="@dimen/reg_text_size"></EditText>
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/reg_middle_left"
+            android:layout_marginRight="@dimen/reg_middle_left"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/reg_input_pwd"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="@dimen/reg_text_size"></EditText>
+
+        <EditText
+            android:id="@+id/register_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/reg_middle_left"
+            android:layout_marginRight="@dimen/reg_middle_left"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_round"
+            android:hint="@string/reg_com_pwd"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="@dimen/reg_text_size"></EditText>
+
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/reg_middle_left"
+            android:layout_marginRight="@dimen/reg_middle_left"
+            android:layout_marginTop="@dimen/reg_middle_top"
+            android:background="@drawable/login_corners_bg"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

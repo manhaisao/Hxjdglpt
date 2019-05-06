@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xzz.hxjdglpt.customview.autolistview.AutoListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/party_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="@android:color/transparent"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.5dp"
+    android:fadingEdge="none"
+    android:listSelector="@android:color/transparent"
+    android:scrollbars="none"></com.xzz.hxjdglpt.customview.autolistview.AutoListView>

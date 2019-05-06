@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/contacts_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                tools:context="com.xzz.hxjdglpt.fragment.ConnectFragment">
+
+    <include
+        android:id="@+id/connect_rl"
+        layout="@layout/lay_title"></include>
+
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connect_rl"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapWords"
+        android:queryHint="@string/search_contacts"/>
+
+    <TextView
+        android:id="@+id/tv_contacts_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/my_info_margin_top_1"
+        android:paddingTop="@dimen/my_info_margin_top_1"
+        android:textSize="@dimen/title_size"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_contacts_num"
+        android:layout_below="@id/search_view"
+        android:background="@color/white">
+
+        <com.woozzu.android.widget.IndexableListView
+            android:id="@+id/lv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"/>
+
+        <ListView
+            android:id="@+id/lv_search_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"></ListView>
+    </FrameLayout>
+</RelativeLayout>

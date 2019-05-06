@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'hxdt'
+            keyPassword '123456'
+            storeFile file('C:/Users/Administrator/Desktop/video/Hxjdglpt/hxjd.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.xzz.hxjdglpt"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 65
+        versionName "7.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        //X5兼容64位手机
+        ndk { abiFilters "armeabi", "armeabi-v7a", "x86", "mips" }
+//        signingConfig signingConfigs.release
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    sourceSets {
+        main { jniLibs.srcDirs = ['libs'] }
+    }
+    dexOptions {
+        javaMaxHeapSize "1g"
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/osbcp-css-parser-1.4.jar')
+    compile 'net.sourceforge.htmlcleaner:htmlcleaner:2.16'
+    compile files('libs/indexable.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile project(':Transferee')
+    compile 'com.zhy:base-adapter:3.0.3'
+    compile project(':UniversalLoader')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/commons-codec-1.6.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile files('libs/fluent-hc-4.2.5.jar')
+    compile files('libs/httpclient-4.2.5.jar')
+    compile files('libs/httpclient-cache-4.2.5.jar')
+    compile files('libs/httpcore-4.2.4.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/greendao-1.3.7.jar')
+    compile files('libs/MiPush_SDK_Client_3_2_2.jar')
+    compile files('libs/fastjson-1.2.5.jar')
+    compile project(':IMLib')
+    compile project(':IMKit')
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('libs/mina-core-2.0.9.jar')
+    compile files('libs/slf4j-api-1.7.7.jar')
+    compile files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.github.maning0303:MNUpdateAPK:V1.0.5'
+    compile project(':libvlc2.5.5')
+    compile project(':jcvideoplayer-lib')
+    compile 'com.github.huangyanbin:SmartTable:2.2.0'
+    //1.1.0 （1.0.5及以前版本的老用户升级需谨慎，API改动过大）
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+    compile 'org.greenrobot:eventbus:3.0.0'
+}

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/info_detail_image_show"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/base_info_1"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/party_t_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/party_name_" />
+
+                <TextView
+                    android:id="@+id/party_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_name" />
+
+                <TextView
+                    android:id="@+id/party_t_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/party_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_sex" />
+
+                <TextView
+                    android:id="@+id/party_t_mz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_sex"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="民族：" />
+
+                <TextView
+                    android:id="@+id/party_mz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_sex"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_mz" />
+
+                <TextView
+                    android:id="@+id/party_t_sfzh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_mz"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sfzh_" />
+
+                <TextView
+                    android:id="@+id/party_sfzh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_mz"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_sfzh" />
+
+                <TextView
+                    android:id="@+id/party_t_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_sfzh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/birth_"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/party_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_sfzh"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_birth"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/party_t_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_birth"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_cun_" />
+
+                <TextView
+                    android:id="@+id/party_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_birth"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_cun" />
+
+                <TextView
+                    android:id="@+id/party_t_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_cun"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_grid_" />
+
+                <TextView
+                    android:id="@+id/party_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_cun"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_grid" />
+
+                <TextView
+                    android:id="@+id/party_t_dzb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_grid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_dzb_" />
+
+                <TextView
+                    android:id="@+id/party_dzb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_grid"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_dzb"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/party_t_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_dzb"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="入党时间：" />
+
+                <TextView
+                    android:id="@+id/party_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_dzb"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_time" />
+
+                <TextView
+                    android:id="@+id/party_t_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_time"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lx_phone_" />
+
+                <TextView
+                    android:id="@+id/party_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_time"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_phone" />
+
+                <TextView
+                    android:id="@+id/party_t_xl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_phone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="文化程度：" />
+
+                <TextView
+                    android:id="@+id/party_xl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_phone"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_xl" />
+
+                <TextView
+                    android:id="@+id/party_t_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_xl"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/dy_type_" />
+
+                <TextView
+                    android:id="@+id/party_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_xl"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_type" />
+
+                <TextView
+                    android:id="@+id/party_t_ldtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_type"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ldlx_" />
+
+                <TextView
+                    android:id="@+id/party_ldtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_type"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_ldtype" />
+
+                <TextView
+                    android:id="@+id/party_t_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_t_ldtype"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="工作单位及职务：" />
+
+                <TextView
+                    android:id="@+id/party_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/party_ldtype"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/party_t_dw"
+                    android:ellipsize="end" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/party_reason_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="困难原因"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/party_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/bz_"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/party_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

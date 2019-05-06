@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/title_bg"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_btn_back"
+            android:drawableLeft="@mipmap/ac_back_icon"
+            android:gravity="center_vertical"
+            android:onClick="onHeadLeftButtonClick"
+            android:textColor="@drawable/selector_btn_top"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#0083e0"/>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="创建组群"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <io.rong.imkit.widget.AsyncImageView
+        android:id="@+id/img_Group_portrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/add_group_head"/>
+
+    <com.xzz.hxjdglpt.server.widget.ClearWriteEditText
+        android:id="@+id/create_groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="80dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/edit_group_name"
+        android:maxLength="10"/>
+
+    <Button
+        android:id="@+id/create_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rs_select_btn_blue"
+        android:text="@string/confirm"
+        android:textColor="#FFF"/>
+
+</LinearLayout>

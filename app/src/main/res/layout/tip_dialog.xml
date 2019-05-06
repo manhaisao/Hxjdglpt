@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tip_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/my_info_margin_top_1"
+        android:layout_marginLeft="@dimen/my_info_margin_top_1"
+        android:layout_marginTop="@dimen/my_info_margin_top_1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/shallow_balck"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/division"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tip_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/comfirm"
+            android:textColor="@color/shallow_blue"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/division"/>
+
+        <Button
+            android:id="@+id/tip_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/cancel"
+            android:textColor="@color/shallow_blue"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>

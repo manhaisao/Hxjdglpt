@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/plot_info_title"
+        layout="@layout/lay_detail_title"></include>
+    <LinearLayout
+        android:id="@+id/plot_lt_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sxgz_gzdt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_button"
+            android:text="工作动态"
+            android:textColor="@color/white"
+            android:textSize="16sp"></Button>
+
+        <Button
+            android:id="@+id/plot_lt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_button"
+            android:text="论坛审核"
+            android:textColor="@color/white"
+            android:textSize="16sp"></Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/plot_lt_lay"
+        android:layout_below="@id/plot_info_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/plot_info_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/base_info_1"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/plot_t_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_name" />
+
+                <TextView
+                    android:id="@+id/plot_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_name" />
+
+                <TextView
+                    android:id="@+id/plot_t_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_cun_" />
+
+                <TextView
+                    android:id="@+id/plot_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_cun" />
+
+                <TextView
+                    android:id="@+id/plot_t_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_cun"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_grid_" />
+
+                <TextView
+                    android:id="@+id/plot_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_cun"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_grid" />
+
+                <TextView
+                    android:id="@+id/plot_t_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_grid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/area" />
+
+                <TextView
+                    android:id="@+id/plot_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_grid"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_area" />
+
+                <TextView
+                    android:id="@+id/plot_t_dnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_area"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_num" />
+
+                <TextView
+                    android:id="@+id/plot_dnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_area"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_dnum" />
+
+                <TextView
+                    android:id="@+id/plot_t_zhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_dnum"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_h_num" />
+
+                <TextView
+                    android:id="@+id/plot_zhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_dnum"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_zhs" />
+
+                <TextView
+                    android:id="@+id/plot_t_wygs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zhs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_wygs" />
+
+                <TextView
+                    android:id="@+id/plot_wygs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zhs"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_wygs" />
+
+                <TextView
+                    android:id="@+id/plot_t_wyphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wygs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_wygs_phone" />
+
+                <TextView
+                    android:id="@+id/plot_wyphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wygs"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_wyphone" />
+
+                <TextView
+                    android:id="@+id/plot_t_zjl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wyphone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_wyzjl" />
+
+                <TextView
+                    android:id="@+id/plot_zjl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wyphone"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_zjl" />
+
+                <TextView
+                    android:id="@+id/plot_t_zjldh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zjl"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="物业总经理电话：" />
+
+                <TextView
+                    android:id="@+id/plot_zjldh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_zjl"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_zjldh" />
+
+                <TextView
+                    android:id="@+id/plot_t_wyfzr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zjldh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="物业责任人：" />
+
+                <TextView
+                    android:id="@+id/plot_wyfzr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_zjldh"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_wyfzr" />
+
+                <TextView
+                    android:id="@+id/plot_t_wyfzrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wyfzr"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="物业责任人电话：" />
+
+                <TextView
+                    android:id="@+id/plot_wyfzrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_wyfzr"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_wyfzrdh" />
+
+                <TextView
+                    android:id="@+id/plot_t_wgrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wyfzrdh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_wg_num" />
+
+                <TextView
+                    android:id="@+id/plot_wgrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_wyfzrdh"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_wgrs" />
+
+
+                <TextView
+                    android:id="@+id/plot_t_bjrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wgrs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_bj_num" />
+
+                <TextView
+                    android:id="@+id/plot_bjrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_wgrs"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_bjrs" />
+
+
+                <TextView
+                    android:id="@+id/plot_t_zrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_bjrs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_zrr" />
+
+                <TextView
+                    android:id="@+id/plot_zrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_bjrs"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_zrr" />
+
+                <TextView
+                    android:id="@+id/plot_t_zrrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zrr"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/plot_zrr_phone" />
+
+                <TextView
+                    android:id="@+id/plot_zrrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zrr"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_zrrdh" />
+
+                <TextView
+                    android:id="@+id/plot_t_ba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_t_zrrdh"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="保安：" />
+
+                <TextView
+                    android:id="@+id/plot_ba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plot_zrrdh"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/plot_t_ba" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/plot_info_tvbz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/bz_"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/plot_d_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

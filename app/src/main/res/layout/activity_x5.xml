@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/title_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"></ImageView>
+
+        <TextView
+            android:id="@+id/hx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/title_top"
+            android:layout_toRightOf="@id/iv_back"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"/>
+    </RelativeLayout>
+
+    <com.xzz.hxjdglpt.superfileview.SuperFileView2
+        android:id="@+id/mSuperFileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.xzz.hxjdglpt.superfileview.SuperFileView2>
+</LinearLayout>

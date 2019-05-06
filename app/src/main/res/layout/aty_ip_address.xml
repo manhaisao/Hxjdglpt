@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color"
+                android:fitsSystemWindows="true">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/login_tv_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/login_left_right"
+                    android:text="IP地址："
+                    android:textSize="@dimen/login_input_size"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/ip_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/login_left_right"
+                    android:layout_marginRight="@dimen/login_left_right"
+                    android:layout_toRightOf="@id/login_tv_ac"
+                    android:hint="如：192.168.0.102:8080"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/login_input_size"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ip_address_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_left_right"
+            android:layout_marginRight="@dimen/login_left_right"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/corners_bg"
+            android:text="@string/comfirm_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_button_size"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color"
+                android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/jlfz_title"
+        layout="@layout/lay_title_tv"></include>
+
+    <LinearLayout
+        android:id="@+id/jlfz_drz_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jlfz_drz_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/other_button"
+            android:text="确认认证"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/jlfz_drz_th"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/other_button"
+            android:text="认证退回"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/jlfz_drz_lay"
+        android:layout_below="@id/jlfz_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/info_detail_image_show"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/base_info_1"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/name_"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_name"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_cun_"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_cun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_cun"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_cun"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/have_grid_"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_cun"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_grid"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_sfzh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_grid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sfzh_"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_sfzh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_grid"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_sfzh"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_sfzh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/jt_address"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_sfzh"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_address"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_lx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_address"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/yflx_"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_lx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_address"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_lx"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_lx"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lx_phone_"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_lx"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_phone"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_t_zt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_phone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/rzzt"/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_zt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_phone"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_zt"/>
+                <TextView
+                    android:id="@+id/jlfz_info_t_ldlx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_t_zt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="流动类型："/>
+
+                <TextView
+                    android:id="@+id/jlfz_info_ldlx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jlfz_info_zt"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/jlfz_info_t_ldlx"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/jlfz_info_t_thyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="退回原因"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/jlfz_info_thyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/bz_"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/jlfz_info_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

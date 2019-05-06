@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/add_image_margin_h"
+        android:paddingTop="@dimen/add_image_margin_h"
+        android:text="@string/take_photo"
+        android:textColor="@color/shallow_blue"
+        android:textSize="@dimen/add_image_text_size" />
+
+    <TextView
+        android:id="@+id/tv_select_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/add_image_margin_h"
+        android:paddingTop="@dimen/add_image_margin_h"
+        android:text="@string/select_photo"
+        android:textColor="@color/shallow_blue"
+        android:textSize="@dimen/add_image_text_size" />
+
+    <TextView
+        android:id="@+id/tv_cancle_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/add_image_margin_h"
+        android:paddingTop="@dimen/add_image_margin_h"
+        android:text="@string/cancel"
+        android:textColor="@color/shallow_blue"
+        android:textSize="@dimen/add_image_text_size" />
+
+</LinearLayout>

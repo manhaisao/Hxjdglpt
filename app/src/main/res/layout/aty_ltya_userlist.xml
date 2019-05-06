@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/lay_title_tv"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/dialog_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapWords"
+            android:queryHint="@string/search_name" />
+
+        <LinearLayout
+            android:id="@+id/custom_dialog_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/custom_dialog_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/comfirm_1"
+                android:textColor="@color/shallow_blue"
+                android:textSize="@dimen/my_info_text_size" />
+
+            <Button
+                android:id="@+id/custom_dialog_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/cancel"
+                android:textColor="@color/shallow_blue"
+                android:textSize="@dimen/my_info_text_size" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/custom_dialog_but"
+            android:layout_below="@id/dialog_search_view"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_loading" />
+
+            <com.woozzu.android.widget.IndexableListView
+                android:id="@+id/dialog_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent" />
+
+            <ListView
+                android:id="@+id/dialog_search_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:visibility="gone"></ListView>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/shallow_blue"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/epj_title_laber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_round"
+        android:gravity="top"
+        android:lines="3"
+        android:padding="5dp"
+        android:textColor="@color/t_color"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/division"/>
+
+    <LinearLayout
+        android:id="@+id/epj_title_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1px"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/shallow_blue"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/dialog_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/shallow_blue"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <include layout="@layout/info_detail_image_show"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/base_info_1"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/db_t_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/name_" />
+
+        <TextView
+            android:id="@+id/db_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_name" />
+
+        <TextView
+            android:id="@+id/db_t_cun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/have_cun_" />
+
+        <TextView
+            android:id="@+id/db_cun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_cun" />
+
+        <TextView
+            android:id="@+id/db_t_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_cun"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/have_grid_" />
+
+        <TextView
+            android:id="@+id/db_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_cun"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_grid" />
+
+        <TextView
+            android:id="@+id/db_t_sfzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_grid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sfzh_"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/db_sfzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_grid"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_sfzh"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/db_t_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_sfzh"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/db_type" />
+
+        <TextView
+            android:id="@+id/db_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_sfzh"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_type" />
+
+        <TextView
+            android:id="@+id/db_t_dbzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/dbzh_" />
+
+        <TextView
+            android:id="@+id/db_dbzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_type"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_dbzh" />
+
+        <TextView
+            android:id="@+id/db_t_dbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_dbzh"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/dbs_" />
+
+        <TextView
+            android:id="@+id/db_dbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_dbzh"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_dbs" />
+
+        <TextView
+            android:id="@+id/db_t_wgy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_dbs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="网格员：" />
+
+        <TextView
+            android:id="@+id/db_wgy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_dbs"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_wgy" />
+
+        <TextView
+            android:id="@+id/db_t_wgyphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_wgy"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="联系电话：" />
+
+        <TextView
+            android:id="@+id/db_wgyphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_wgy"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_wgyphone" />
+
+        <TextView
+            android:id="@+id/db_t_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_t_type"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/address"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/db_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/db_type"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/db_t_address"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="低保原因："
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/db_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/bz_"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/db_bz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp" />
+</LinearLayout>

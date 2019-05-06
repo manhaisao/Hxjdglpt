@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+
+    <ListView
+        android:id="@+id/map_village_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone"></ListView>
+
+    <FrameLayout
+        android:id="@+id/map_village_list_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_bg"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_01"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_02"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_03"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_04"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_05"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_06"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_07"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_08"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_09"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_10"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_11"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_12"/>
+
+        <com.xzz.hxjdglpt.customview.MenuViewItem
+            android:id="@+id/village_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/village_13"/>
+    </FrameLayout>
+</LinearLayout>

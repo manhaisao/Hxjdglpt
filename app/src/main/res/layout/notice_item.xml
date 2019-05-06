@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/notice_img"
+        android:layout_width="@dimen/icon_list_width"
+        android:layout_height="@dimen/icon_list_height"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/notice_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/news_img"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/notice_img"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/notice_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/division"/>
+
+
+    <TextView
+        android:id="@+id/notice_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/notice_img"
+        android:layout_toRightOf="@id/notice_img"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/notice_item_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/notice_item_time"
+        android:layout_toRightOf="@id/notice_img"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

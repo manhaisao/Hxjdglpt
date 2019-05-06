@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/lay_detail_title"></include>
+
+    <include layout="@layout/info_detail_image_show"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/base_info_1"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/jskn_t_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/name_"/>
+
+        <TextView
+            android:id="@+id/jskn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_name"/>
+
+        <TextView
+            android:id="@+id/jskn_t_cun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/have_cun_"/>
+
+        <TextView
+            android:id="@+id/jskn_cun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_cun"/>
+
+        <TextView
+            android:id="@+id/jskn_t_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_cun"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/have_grid_"/>
+
+        <TextView
+            android:id="@+id/jskn_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_cun"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_grid"/>
+
+        <TextView
+            android:id="@+id/jskn_t_sfzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_grid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sfzh_"/>
+
+        <TextView
+            android:id="@+id/jskn_sfzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_grid"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_sfzh"/>
+
+        <TextView
+            android:id="@+id/jskn_t_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_sfzh"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/jt_address"/>
+
+        <TextView
+            android:id="@+id/jskn_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_sfzh"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_address"/>
+
+        <TextView
+            android:id="@+id/jskn_t_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/phone_"/>
+
+        <TextView
+            android:id="@+id/jskn_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_address"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_phone"/>
+
+        <TextView
+            android:id="@+id/jskn_t_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_phone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/kn_reason"/>
+
+        <TextView
+            android:id="@+id/jskn_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jskn_t_phone"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jskn_t_reason"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/bz_"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/jskn_bz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"/>
+</LinearLayout>
